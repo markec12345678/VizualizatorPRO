@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.bentoml.com/blog/navigating-the-world-of-open-source-large-language-models",
+    "name": "The Best Open-Source LLMs in 2026 - BentoML",
+    "snippet": "Explore the best open-source LLMs and find answers to common FAQs about performance, inference optimization, and self-hosted deployment.\nGLM-5.2#. GLM-5.2 is the latest flagship LLM from Z.ai, built for agentic engineering, software development, and long-horizon reasoning tasks.",
+    "host_name": "www.bentoml.com",
+    "rank": 0,
+    "date": "Jun 15, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co/blog/daya-shankar/open-source-llms",
+    "name": "Best Open-Source LLM Models in 2026: Coding, Local, Agentic AI",
+    "snippet": "including Llama, Qwen, Gemma, DeepSeek, Kimi, and GLM. Apache 2.0 and MIT are usually the cleanest options. Best for: Agentic coding, UI ...",
+    "host_name": "huggingface.co",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pinggy.io/blog/top_5_local_llm_tools_and_models",
+    "name": "Top 5 Local LLM Tools and Models in 2026 - Pinggy",
+    "snippet": "Top 5 Local LLM Tools in 2026 · 1. Ollama · 2. LM Studio · 3. text-generation-webui · 4. GPT4All · 5. LocalAI.\nGLM-5.1, Complete ChatGPT alternative, 100% offline. Intuitive web interface with chat and text completion modes. Launch the web UI: AIME ...",
+    "host_name": "pinggy.io",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://pub.towardsai.net/top-open-source-llms-2026-updated-b2aa585b90dd",
+    "name": "Top Open-Source LLMs (2026 updated) | Towards AI",
+    "snippet": "Top Open-Source LLMs to Watch in 2026 · Qwen 3.5 Series · DeepSeek-V4 & DeepSeek-R1 · Llama 4 (Scout & Maverick) · Gpt-oss-120b · GLM-5 & GLM 4.6.",
+    "host_name": "pub.towardsai.net",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://computingforgeeks.com/open-source-llm-comparison",
+    "name": "Open Source LLM Comparison Table (2026) - ComputingForGeeks",
+    "snippet": "Complete comparison of open-source LLMs: Qwen 3.5, DeepSeek V3.2, GLM-5, Llama 4, Gemma 3, Mistral Small 4, Phi-4. Benchmarks, licenses, and ...",
+    "host_name": "computingforgeeks.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://fireworks.ai/blog/best-open-source-llms",
+    "name": "Best Open Source LLMs in 2026: We Reviewed 7 Models",
+    "snippet": "We tested 7 open source LLMs including DeepSeek v3.2, Kimi K2.5, and Qwen3 VL. Compare benchmarks, costs, and performance to pick the right ...",
+    "host_name": "fireworks.ai",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://localaimaster.com/blog/best-open-source-llms-2026",
+    "name": "Best Open-Source LLMs (2026): Free Models Ranked",
+    "snippet": "The 5 best free open-source LLMs in 2026, ranked: 1) DeepSeek R1 (MIT) 2) Llama 4 Maverick (Llama Community) 3) Qwen 2.5 Coder 32B (Apache 2.0)",
+    "host_name": "localaimaster.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://onyx.app/open-llm-leaderboard",
+    "name": "Best Open Source LLM Leaderboard 2026 - Onyx AI",
+    "snippet": "The definitive ranking of every major open source model — compared across reasoning, coding, math, software engineering, and instruction. ...",
+    "host_name": "onyx.app",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=YAvYCyzJoug",
+    "name": "TOP 3 FREE Open Source Coding LLMs in 2026!! - YouTube",
+    "snippet": "... chat.deepseek.com/ https://chat.qwen.ai/ https://huggingface.co/chat 📽️ Video Timeline: 00:00 – Intro 00:29 – Deepseek-Coder-V2 03 ...",
+    "host_name": "www.youtube.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.avidclan.com/blog/best-chatgpt-alternatives-2026-guide",
+    "name": "Best ChatGPT Alternatives 2026: Top Open & Proprietary AI",
+    "snippet": "Stop relying on one AI. Explore the best ChatGPT alternatives in 2026, from Claude 4.6 to local Llama 4, for better privacy, coding, ...",
+    "host_name": "www.avidclan.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

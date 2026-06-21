@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://openrouter.ai/z-ai/glm-4.5-air:free",
+    "name": "GLM 4.5 Air - API Pricing & Benchmarks - OpenRouter",
+    "snippet": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent ...",
+    "host_name": "openrouter.ai",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/SillyTavernAI/comments/1jtyibt/new_openrouter_limits",
+    "name": "New Openrouter Limits : r/SillyTavernAI - Reddit",
+    "snippet": "The limits have just been adjusted from 200 -> 50 requests per day. Guess you'd have to create at least four accounts to even mimic that of having the 200 ...",
+    "host_name": "www.reddit.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openrouter.ai/docs/api/reference/limits",
+    "name": "API Rate Limits | Configure Usage Limits in OpenRouter",
+    "snippet": "If you have purchased less than 10 credits, you're limited to 50 :free model requests per day. If you purchase at least 10 credits, your daily limit is ...",
+    "host_name": "openrouter.ai",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openrouter.ai/z-ai/glm-5.2",
+    "name": "Z.ai: GLM 5.2 - API Pricing & Benchmarks - OpenRouter",
+    "snippet": "GLM 5.2 is a large-scale reasoning model from Z.ai. $1.20 per million input tokens, $4.10 per million output tokens. 1048576 token context ...",
+    "host_name": "openrouter.ai",
+    "rank": 3,
+    "date": "Jun 15, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.digitalapplied.com/blog/free-ai-models-you-can-use-right-now-april-2026",
+    "name": "Free AI Models You Can Use Right Now (April 2026 Guide)",
+    "snippet": "$30 per million tokens last year are free today, Limitations Closed weights. OpenRouter at 1.38T tokens per week. 2 Flash runs at $0.09/$0.29 ...",
+    "host_name": "www.digitalapplied.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openrouter.ai/pricing",
+    "name": "Pricing - OpenRouter",
+    "snippet": "Free users have a limit of 50 requests per day and 20 requests per minute (rpm) For pay-as-you-go users with at least $10 in credits",
+    "host_name": "openrouter.ai",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openrouter.ai/openai/gpt-5.2",
+    "name": "GPT-5.2 - API Pricing & Benchmarks - OpenRouter",
+    "snippet": "max_tokens integer — This sets the upper limit for the number of tokens the model can generate in response. Input is priced at $0.60 per million tokens and ...",
+    "host_name": "openrouter.ai",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/mnfst/manifest/discussions/951",
+    "name": "New providers: Z.ai, MiniMax, and OpenRouter free models are now",
+    "snippet": "GLM-5 is putting up strong benchmarks at a fraction of the cost of frontier models. OpenRouter free models — We added a free filter in the model picker",
+    "host_name": "github.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]
