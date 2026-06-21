@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://docs.z.ai/devpack/overview",
+    "name": "Overview - Z.AI DEVELOPER DOCUMENT",
+    "snippet": "The GLM Coding Plan is a subscription package designed specifically for AI-powered coding. ... agent capabilities, delivering outstanding results in tool ...",
+    "host_name": "docs.z.ai",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/ClaudeCode/comments/1qijtjx/dont_get_zai_glm_coding_plan",
+    "name": "Don't get Z.ai GLM Coding Plan : r/ClaudeCode - Reddit",
+    "snippet": "I got the yearly Max Coding Plan and already regretting it. GLM 4.7 is a decent model, nowhere near as smart as OpenAI's or Anthropic but ...",
+    "host_name": "www.reddit.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.z.ai/devpack/tool/claude",
+    "name": "Claude Code - Overview - Z.AI DEVELOPER DOCUMENT",
+    "snippet": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, ...",
+    "host_name": "docs.z.ai",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=69Ng_gSXjh8",
+    "name": "Claude Code for $10! (GLM Coding Plan) - YouTube",
+    "snippet": "Learn how to save up to 30 percent on AI coding plans by switching to yearly GLM subscriptions. · Step by step guide to configuring the Zai ...",
+    "host_name": "www.youtube.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/@hc.sale/my-take-on-z-ai-glm-4-7-in-claude-code-the-surprising-alternative-that-saved-my-budget-c11552e76b19",
+    "name": "My Take on GLM-4.7 (in Claude Code): The Surprising Alternative",
+    "snippet": "The flexibility is fantastic too — GLM works with Cursor, Roocode, Kilo Code, Cline,… and basically every coding client under the sun. And at $6 ...\nInstall Claude Code npm install -g @anthropic-ai/claude-code # 2. Get your GLM API key from https://z.ai/model-api # 3. Set up your ...",
+    "host_name": "medium.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/NousResearch/hermes-agent/issues/8461",
+    "name": "Feature Request: Add glm-5.1 model to Z.AI Coding Plan #8461",
+    "snippet": "Users on the Z.AI Coding Plan ( https://open.bigmodel.cn/cn/coding-plan ) should be able to use the latest GLM model through Hermes Agent.\nRequest adding the glm-5.1 model to the Z.AI (GLM) provider in Hermes Agent, so that users on the Z.AI Coding Plan can select and use glm-5.1 as ...",
+    "host_name": "github.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.z.ai/devpack/tool/others",
+    "name": "Tool Integration - Overview - Z.AI DEVELOPER DOCUMENT",
+    "snippet": "GLM Coding Plan provides endpoints for two protocols for different coding tools: OpenAI Chat Completions protocol endpoint: https://api.z.ai/api/coding/paas ...",
+    "host_name": "docs.z.ai",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/groups/developerkaki/posts/2659455084400388",
+    "name": "Z.ai's GLM-4.6 model outperforms Claude Sonnet 4.5 in coding and",
+    "snippet": "It's far better than the default Sonnet, and the price is incredibly cheap for what you get. Meet the Z.ai GLM Coding Plan. I've personally ...",
+    "host_name": "www.facebook.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://vibecoding.app/blog/zhipu-ai-glm-coding-plan-review",
+    "name": "Zhipu AI GLM Review (2026): Z.ai for Budget-Conscious Devs",
+    "snippet": "Zhipu AI GLM Coding Plan (Z.ai) is a budget-friendly API subscription for accessing GLM-4.7 in your existing coding tools.",
+    "host_name": "vibecoding.app",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://z.ai/blog/glm-4.5",
+    "name": "GLM-4.5: Reasoning, Coding, and Agentic Abililties - Z.ai",
+    "snippet": "GLM-4.5 excels in both frontend and backend development, making it powerful for building modern web applications. To better demonstrate its ...",
+    "host_name": "z.ai",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

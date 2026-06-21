@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://huggingface.co/blog/zai-org/glm-52-blog",
+    "name": "GLM-5.2: Built for Long-Horizon Tasks - Hugging Face",
+    "snippet": "GLM-5.2, A solid 1M-token context that stably sustains long-horizon work multiple thinking effort levels. MTP layer for speculative decoding,",
+    "host_name": "huggingface.co",
+    "rank": 0,
+    "date": "Jun 17, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://arxiv.org/html/2602.15763v2",
+    "name": "GLM-5: from Vibe Coding to Agentic Engineering - arXiv",
+    "snippet": "GLM-5 leverages slime's support for Multi-Token Prediction (MTP), which is especially effective under the small-batch decoding regime typical ...",
+    "host_name": "arxiv.org",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.eigent.ai/blog/glm-5-2",
+    "name": "GLM-5.2: Zhipu AI's 1M-Token Open-Weight Coding Model - Eigent AI",
+    "snippet": "Improved multi-token prediction (MTP) layers for speculative decoding, reportedly boosting acceptance rates by up to ~20% and helping ...",
+    "host_name": "www.eigent.ai",
+    "rank": 2,
+    "date": "Jun 18, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=gZtE-0q6eAM",
+    "name": "[Podcast] GLM-5.2: Advancing Long-Horizon Tasks with 1M Token",
+    "snippet": "ai #research GLM-5.2: Advancing Long-Horizon Tasks with 1M Token Context https://z.ai/blog/glm-5.2 Z.ai Introduces GLM-5.2, ...",
+    "host_name": "www.youtube.com",
+    "rank": 3,
+    "date": "Jun 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/AIGuild/comments/1u7vmrx/zai_releases_glm52_with_a_1_milliontoken_context",
+    "name": "Z.ai Releases GLM-5.2 With a 1 Million-Token Context Window",
+    "snippet": "GLM-5.2, its latest open AI model built for long-running coding and agent tasks. Its biggest upgrade is a one-million-token context window. API ...",
+    "host_name": "www.reddit.com",
+    "rank": 4,
+    "date": "Jun 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.latent.space/p/ainews-glm-52-the-top-frontend-coding",
+    "name": "[AINews] GLM-5.2: the top Frontend Coding model in the world",
+    "snippet": "GLM-5.2 as an MIT-licensed open-weight frontier model aimed at coding and long-horizon agentic work. a 1M-token context window,",
+    "host_name": "www.latent.space",
+    "rank": 5,
+    "date": "Jun 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/jietang/status/2067022641949814893",
+    "name": "A solid 1M-token context that stably sustains long-horizon work",
+    "snippet": "GLM-5.2 is the highest-ranked open-source model, showing that its 1M context has translated into practical long-horizon delivery capability.",
+    "host_name": "x.com",
+    "rank": 6,
+    "date": "Jun 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/data-science-in-your-pocket/how-to-use-glm-5-2-for-free-ae1bddaba6d9",
+    "name": "How to use GLM 5.2 for free? - Medium",
+    "snippet": "GLM-5.2 supports a full 1 million token context window. That means an AI agent can theoretically keep enormous amounts of project history, ...",
+    "host_name": "medium.com",
+    "rank": 7,
+    "date": "Jun 16, 2026",
+    "favicon": ""
+  }
+]

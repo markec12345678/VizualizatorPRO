@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://docs.z.ai/guides/overview/quick-start",
+    "name": "Quick Start - Overview - Z.AI DEVELOPER DOCUMENT",
+    "snippet": "After preparing your API Key and selecting a model, you can start making API calls. Here are examples using curl , Python SDK , and Java SDK : cURL. Official ...",
+    "host_name": "docs.z.ai",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.z.ai/api-reference/introduction",
+    "name": "Introduction - Overview - Z.AI DEVELOPER DOCUMENT",
+    "snippet": "Z.AI provides standard HTTP API interfaces that support multiple programming languages and development environments, with SDKs also available. ... Note: - The GLM ...",
+    "host_name": "docs.z.ai",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/zai-org/z-ai-sdk-python",
+    "name": "zai-org/z-ai-sdk-python - GitHub",
+    "snippet": "The official Python SDK for Z.ai's large model open interface, making it easier for developers to call Z.ai's open APIs. - zai-org/z-ai-sdk-python.",
+    "host_name": "github.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.z.ai/guides/develop/python/introduction",
+    "name": "Official Python SDK - Overview - Z.AI DEVELOPER DOCUMENT",
+    "snippet": "Official Python SDK · Supports Python 3.8, 3.9, 3.10, 3.11, 3.12 versions, cross-platform compatible with Windows, macOS, Linux · It is recommended to set the API ...",
+    "host_name": "docs.z.ai",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://z.ai/model-api",
+    "name": "Z.ai API Platform — Start building with GLM-5.2",
+    "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity's most complex challenges. GLM-5.2 is our new flagship ...",
+    "host_name": "z.ai",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://openrouter.ai/z-ai",
+    "name": "Z.ai API and Models - OpenRouter",
+    "snippet": "Access 13 Z.ai models through the OpenRouter unified API including GLM 5.2, GLM 5.1, and GLM 5V Turbo. Compare pricing, context windows, benchmarks, ...",
+    "host_name": "openrouter.ai",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://z.ai/blog/glm-4.5",
+    "name": "GLM-4.5: Reasoning, Coding, and Agentic Abililties - Z.ai",
+    "snippet": "Detailed instructions for integrating GLM-4.5 with Claude Code and other coding agent frameworks are available in the documentation at Z.ai API.",
+    "host_name": "z.ai",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.z.ai/guides/develop/http/introduction",
+    "name": "HTTP API Calls - Overview - Z.AI DEVELOPER DOCUMENT",
+    "snippet": "Z.AI provides standard HTTP API interfaces that support multiple programming languages and development environments, allowing you to easily integrate Z.AI's ...",
+    "host_name": "docs.z.ai",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ai-sdk.dev/playground/zai:glm-4.7",
+    "name": "GLM-4.7 is Z.ai's - AI SDK",
+    "snippet": "The AI SDK is the TypeScript toolkit designed to help developers build AI-powered applications with React, Next.js, Vue, Svelte, Node.js, and more.",
+    "host_name": "ai-sdk.dev",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.z.ai/release-notes/new-released",
+    "name": "New Released - Overview - Z.AI DEVELOPER DOCUMENT",
+    "snippet": "Designed for long-horizon tasks, GLM-5.1 can work independently for up to 8 hours in a single run, enabling a full loop from planning and execution to iterative ...",
+    "host_name": "docs.z.ai",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

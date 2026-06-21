@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.reddit.com/r/LocalLLM/comments/1s54pdi/glm51_just_dropped_any_good",
+    "name": "GLM-5.1 just dropped. Any good? : r/LocalLLM - Reddit",
+    "snippet": "I've now used GLM-5.1 via pi.dev and its really good vs 4.7 in my experience. PI is way less bloaty (unless you make it so) than any other tools ...",
+    "host_name": "www.reddit.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1mcgm9s/psa_zaiglm45_is_absolutely_crushing_it_for_coding",
+    "name": "PSA: zai/glm-4.5 is absolutely crushing it for coding - way better than",
+    "snippet": "I just tried to make a random presentation today with GLM and was blown away! Now I'm hearing that it can code and code cheaply… wow, just wow!",
+    "host_name": "www.reddit.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1nx18ax/glm_46_is_a_fuking_amazing_model_and_nobody_can",
+    "name": "GLM 4.6 IS A FUKING AMAZING MODEL AND NOBODY CAN TELL",
+    "snippet": "Overall, glm 4.6 is faster than sonnet 4.5 from my experience, they just have both the coding power and power being agentic. People who ...",
+    "host_name": "www.reddit.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1motbnk/whats_your_experience_with_glm45_pros_and_cons",
+    "name": "What's your experience with GLM-4.5? Pros and cons? : r/LocalLLaMA",
+    "snippet": "glm-4.5 has been surprisingly strong. i'd say it's one of those models that doesn't try to sound smart, it just quietly outputs working code.",
+    "host_name": "www.reddit.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLM/comments/1sft0n9/glm51_claims_near_opus_level_coding_performance",
+    "name": "Glm-5.1 claims near opus level coding performance - Reddit",
+    "snippet": "From my experience it is probably 4.5 level, which is still really good. One quirk I noticed is that it seems to hallucinate much more depending ...",
+    "host_name": "www.reddit.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/vibecoding/comments/1oa0flg/is_glm_46_worth_the_hype_or_just_overrated",
+    "name": "Is GLM 4.6 worth the hype or just overrated? : r/vibecoding - Reddit",
+    "snippet": "GLM 4.6 is great. I have no problems with it in plan mode or agent mode with open code, was using CC. It's not a generation or two behind as ...",
+    "host_name": "www.reddit.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/ZaiGLM",
+    "name": "r/ZaiGLM - Reddit",
+    "snippet": "I genuinely really like the GLM-5.1 model, but unfortunately, it seems like · Z.AI. has gotten way too greedy lately.",
+    "host_name": "www.reddit.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/ZaiGLM/hot",
+    "name": "r/ZaiGLM - Reddit",
+    "snippet": "Hello, I need advice on the infra for using the GLM5.2 model. Is a direct API from Zai cheaper, is the Zai coding plan cheaper? What about Opencode Go ...",
+    "host_name": "www.reddit.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/ZaiGLM/rising",
+    "name": "Z.ai GLM - Reddit",
+    "snippet": "GLM5.2 is an effort-driven model. It utilizes so many tokens that it borders on overthinking, keeping as many possibilities open as possible—even verifying ...",
+    "host_name": "www.reddit.com",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/ZaiGLM/new",
+    "name": "Z.ai GLM - Reddit",
+    "snippet": "There's been a lot of hype around GLM 5.2 being a cheap \"frontier killer\": good enough to replace Opus 4.8 / GPT 5.5 for most coding work, just by swapping it ...",
+    "host_name": "www.reddit.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

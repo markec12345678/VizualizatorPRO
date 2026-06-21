@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://huggingface.co/zai-org/GLM-5.2",
+    "name": "zai-org/GLM-5.2 - Hugging Face",
+    "snippet": "Pure Open: An MIT open-source license — no regional limits, technical access without borders ... Downloads last month: 27,413. Safetensors.",
+    "host_name": "huggingface.co",
+    "rank": 0,
+    "date": "Jun 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co/zai-org/GLM-5",
+    "name": "zai-org/GLM-5 - Hugging Face",
+    "snippet": "With advances in both pre-training and post-training, GLM-5 delivers significant improvement compared to GLM-4.7 across a wide range of academic ...",
+    "host_name": "huggingface.co",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLM/comments/1u7pjdf/glm_52_weights_hit_hf_today_under_mit",
+    "name": "Glm 5.2 weights hit hf today under MIT, frontier-level open source is",
+    "snippet": "GLM-5.2 weights and download options. GLM-5.2 vs GPT-5.5 ... out. Weights： https://huggingface.co/zai-org/GLM-5.2. Blog：https ...",
+    "host_name": "www.reddit.com",
+    "rank": 2,
+    "date": "Jun 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://x.com/testingcatalog/status/2066941011289387344",
+    "name": "ZAI : GLM-5.2 is now available on huggingface! > It comes with a 1M",
+    "snippet": "> It comes with a 1M context window and 2 levels of reasoning effort, max and high. MIT license and same pricing as GLM-5.1.",
+    "host_name": "x.com",
+    "rank": 3,
+    "date": "Jun 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/zai-org/GLM-5",
+    "name": "zai-org/GLM-5: GLM-5: From Vibe Coding to Agentic Engineering",
+    "snippet": "On standard coding benchmarks, GLM-5.2 is the strongest open-source model, improving on GLM-5.1 by a wide margin: 81.0 vs. 62.0 on Terminal-Bench 2.1 and 62.1 ...",
+    "host_name": "github.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=nGVxQ_qQskI",
+    "name": "How to Use GLM 5.2 For Free (Z.ai Open Source AI) - YouTube",
+    "snippet": "I checked out the new GLM 5.2 open-weight model by Z.ai to see how it actually holds up as a free alternative for developers.",
+    "host_name": "www.youtube.com",
+    "rank": 5,
+    "date": "Jun 19, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://huggingface.co/zai-org/GLM-5.2/tree/main",
+    "name": "zai-org/GLM-5.2 at main - Hugging Face",
+    "snippet": "Instructions to use zai-org/GLM-5.2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ...",
+    "host_name": "huggingface.co",
+    "rank": 6,
+    "date": "Jun 18, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://techjacksolutions.com/ai-brief/open-source-ai-news-zai-drops-glm-52-weights-on-hugging-face",
+    "name": "Open Source AI News: Z.ai GLM-5.2 Release & Weights 2026",
+    "snippet": "Z.ai has released the GLM-5.2 model weights on Hugging Face under an MIT License, requiring 8xH100 GPUs for optimal performance, ...",
+    "host_name": "techjacksolutions.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

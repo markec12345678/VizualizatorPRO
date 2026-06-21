@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://docs.z.ai/guides/develop/openai/python",
+    "name": "OpenAI Python SDK - Overview - Z.AI DEVELOPER DOCUMENT",
+    "snippet": "Z.AI provides interfaces compatible with OpenAI API, which means you can use existing OpenAI SDK code and seamlessly switch to Z.AI's model services by ...",
+    "host_name": "docs.z.ai",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.z.ai/guides/overview/quick-start",
+    "name": "Quick Start - Overview - Z.AI DEVELOPER DOCUMENT",
+    "snippet": "OpenAI Python SDK. OpenAI SDK Compatibility, quickly migrating from OpenAI. API Reference. Complete API documentation with parameter descriptions. 4. Make API ...",
+    "host_name": "docs.z.ai",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/simonw/llm/issues/1347",
+    "name": "trying to add OpenAI compatible z.AI (GLM-4.7) · Issue #1347 - GitHub",
+    "snippet": "... Python script like this: from openai import OpenAI def main(): client = OpenAI( api_key=\"secret-api-key\", base_url=\"https://api.z.ai/api/coding/",
+    "host_name": "github.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.z.ai/devpack/tool/others",
+    "name": "Tool Integration - Overview - Z.AI DEVELOPER DOCUMENT",
+    "snippet": "Select an OpenAI-compatible provider. Add/Replace the OpenAI Base URL with https://api.z.ai/api/coding/paas/v4. Enter your Z.AI API Key and select a GLM model.",
+    "host_name": "docs.z.ai",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://community.openai.com/t/how-can-i-get-my-gpt-api-endpoint/565915",
+    "name": "How can i get my GPT \"API ENDPOINT\"?",
+    "snippet": "To use the API, you must have a developer account with payment method (no, the API is not free), the starting point is here: platform.openai.com.",
+    "host_name": "community.openai.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/AIToolsPerformance/comments/1qsth0a/zai_free_api_access_to_glm47_with",
+    "name": "Z.ai: Free API Access to GLM-4.7 with Anthropic-Compatible Endpoint",
+    "snippet": "Z.ai gives you free API access to GLM-4.7 (Zhipu AI's flagship model) through an Anthropic Messages API compatible endpoint. What is it? Model: ...",
+    "host_name": "www.reddit.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.firecrawl.dev/blog/5_easy_ways_to_access_glm_4_5",
+    "name": "5 Easy Ways to Access GLM-4.5 - Firecrawl",
+    "snippet": "Z.AI Open Platform. Z.AI Open Platform offers official, OpenAI-compatible API access to GLM-4.5, allowing developers to easily integrate ...",
+    "host_name": "www.firecrawl.dev",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.together.ai/docs/inference/openai-compatibility",
+    "name": "OpenAI compatibility - Together AI docs",
+    "snippet": "The following OpenAI SDK methods route to Together-native endpoints when the base URL is set to https://api.together.ai/v1 . OpenAI SDK call, Together endpoint ...",
+    "host_name": "docs.together.ai",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.atlascloud.ai/models/zai-org/glm-5.1",
+    "name": "GLM 5.1 API: Z.AI Flagship LLM with Coding and Agent Tasks",
+    "snippet": "Access GLM 5.1 by Z.AI on Atlas Cloud. Enhanced programming capabilities, stable multi-step reasoning, and strong performance on complex agent tasks.",
+    "host_name": "www.atlascloud.ai",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.answeroverflow.com/m/1466013819137687759",
+    "name": "how do i use a custom base url for my ai model? - Answer Overflow",
+    "snippet": "i use the zai glm coding plan subscription. i need to use the http://api.z.ai/api/coding/paas/v4/ base url how do i do this?",
+    "host_name": "www.answeroverflow.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

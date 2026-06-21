@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=DxUe2cwWzdI",
+    "name": "FULLY FREE GLM-5.2 + Z-Code: This is ACTUALLY GOOD!",
+    "snippet": "In this video, I'll be telling you about Z Code, the new coding agent from Z AI built for GLM models, and why it is a pretty interesting ...",
+    "host_name": "www.youtube.com",
+    "rank": 0,
+    "date": "Jun 18, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost",
+    "name": "Z.ai's open-weights GLM-5.2 beats GPT-5.5 on multiple long-horizon",
+    "snippet": "GLM-5.2 API access is priced at $1.40 per million input tokens and $4.40 per million output tokens, making it a mid-priced model globally,",
+    "host_name": "venturebeat.com",
+    "rank": 1,
+    "date": "Jun 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/opencodeCLI/comments/1u8l3qb/i_burned_through_19m_tokens_of_glm52_for_under_3",
+    "name": "I burned through 19M tokens of GLM-5.2 for under $3 today - Reddit",
+    "snippet": "Based on OpenRouter pricing with Z(dot)ai as the provider: M = $4.50 - 1.9M regular input tokens x $1.40/1M = $2.66 - 192.9K output glm5.2 have ...\nThe final cost for 19.2M tokens was just $2.72. Total ≈ $0.88. Based on OpenRouter pricing with Z(dot)ai as the provider: - 17M cached input ...",
+    "host_name": "www.reddit.com",
+    "rank": 2,
+    "date": "Jun 17, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://z.ai/subscribe",
+    "name": "GLM Coding Plan - Z.ai",
+    "snippet": "Z.AI -30% per Year $112/ month$160 / month $1344 / year from 2nd year. GLM-5.2: #1 Open-Source, With its developer-friendly pricing, a fraction of the cost.\nZ.AI -30% per Year $112/ month$160 / month $1344 / year from 2nd year. GLM-5, Reliable Delivery of Production-Grade. GLM-5 delivers frontier intelligence at a ...",
+    "host_name": "z.ai",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://lushbinary.com/blog/glm-5-2-api-pricing-glm-coding-plan-guide",
+    "name": "GLM 5.2 API & Pricing: GLM Coding Plan Guide | Lushbinary",
+    "snippet": "Z.ai turned on the standalone pay-per-token API on June 16, 2026, priced at $1.40 per million input tokens and $4.40 per million output tokens ...",
+    "host_name": "lushbinary.com",
+    "rank": 4,
+    "date": "Jun 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.requesty.ai/models/zai/glm-5.2",
+    "name": "Z.ai glm-5.2 API Pricing & Cost: Context Window & Benchmarks",
+    "snippet": "How much does glm-5.2 cost? glm-5.2 is priced at $1.40 per million input tokens and $4.40 per million output tokens when accessed via Requesty.",
+    "host_name": "www.requesty.ai",
+    "rank": 5,
+    "date": "Jun 17, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://zenmux.ai/z-ai/glm-5.2-free",
+    "name": "Z.AI: GLM 5.2 (Free) - ZenMux",
+    "snippet": "GLM 5.2 supports a larger context window and output length, with up to 1M context and 128K output tokens. It adds streaming output for tool ...",
+    "host_name": "zenmux.ai",
+    "rank": 6,
+    "date": "Jun 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://openrouter.ai/z-ai/glm-5.2",
+    "name": "Z.ai: GLM 5.2 - API Pricing & Benchmarks - OpenRouter",
+    "snippet": "GLM 5.2 is a large-scale reasoning model from Z.ai. $1.20 per million input tokens, $4.10 per million output tokens. 1048576 token context ...",
+    "host_name": "openrouter.ai",
+    "rank": 7,
+    "date": "Jun 15, 2026",
+    "favicon": ""
+  }
+]

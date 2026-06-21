@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://docs.z.ai/guides/overview/quick-start",
+    "name": "Quick Start - Overview - Z.AI DEVELOPER DOCUMENT",
+    "snippet": "GLM Coding Plan — monthly access to world-class models, compatible with top coding tools like Claude Code and Cline. All from just $18/month. Python SDK , and ...",
+    "host_name": "docs.z.ai",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/stefandevo/glm-acp-agent",
+    "name": "stefandevo/glm-acp-agent - GitHub",
+    "snippet": "An Agent Client Protocol (ACP) agent written in TypeScript that uses the Z.AI / Zhipu AI GLM model family connects to any ACP-compatible IDE or client over ...",
+    "host_name": "github.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.npmjs.com/package/@guizmo-ai/zai-cli",
+    "name": "@guizmo-ai/zai-cli - npm",
+    "snippet": "An open-source AI agent that brings the power of Z.ai GLM models directly into your terminal.. Latest version: 0.3.5, last published: 7 ...",
+    "host_name": "www.npmjs.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://z.ai/blog/glm-5",
+    "name": "GLM-5: From Vibe Coding to Agentic Engineering - Z.ai",
+    "snippet": "GLM-5 is designed for complex systems engineering and long-horizon agentic tasks. On our internal evaluation suite CC-Bench-V2, GLM-5 ...",
+    "host_name": "z.ai",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/ClaudeCode/comments/1nv64g5/i_made_a_tool_to_use_zais_glm_models_with_claude",
+    "name": "I made a tool to use Z.AI's GLM models with Claude Code  - Reddit",
+    "snippet": "It lets you easily switch between Z.AI's GLM models and regular Claude — without messing up your existing setup. You'll need Claude Code ...",
+    "host_name": "www.reddit.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=GBqSjtR34fM",
+    "name": "2026 | This AI Coder from China Is Shockingly Good | How to Use Z.AI",
+    "snippet": "Z.ai Review + Tutorial - 2026 | This AI Coder from China Is Shockingly Good | How to Use Z.AI. 50K views · 7 months ago. #zai #glm #ad.",
+    "host_name": "www.youtube.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://ai-sdk.dev",
+    "name": "AI SDK",
+    "snippet": "The open-source AI toolkit designed to help developers build AI-powered applications and agents with React, Next.js, Vue, Svelte, Node.js, and more.",
+    "host_name": "ai-sdk.dev",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.theunwindai.com/p/vercel-releases-the-npm-of-agent-skills",
+    "name": "Vercel Releases the \"npm\" of Agent Skills - unwind ai",
+    "snippet": "Vercel released the “npm” of Agent Skills Z.ai's GLM-4.7-Flash for local coding and agentic tasks. A context engineering skill for AI agents ...",
+    "host_name": "www.theunwindai.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://docs.z.ai/release-notes/new-released",
+    "name": "New Released - Overview - Z.AI DEVELOPER DOCUMENT",
+    "snippet": "We've launched GLM-4.5V, a 100B-scale open-source vision reasoning model, supporting a broad range of visual tasks including video understanding, visual ...",
+    "host_name": "docs.z.ai",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://z.ai/blog/glm-5.2",
+    "name": "GLM-5.2: Built for Long-Horizon Tasks - Z.ai",
+    "snippet": "We're introducing GLM-5.2, our latest flagship model for long-horizon tasks. It marks a substantial leap in long-horizon task capability ...",
+    "host_name": "z.ai",
+    "rank": 1,
+    "date": "Jun 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.z.ai/guides/llm/glm-5.2",
+    "name": "GLM-5.2 - Overview - Z.AI DEVELOPER DOCUMENT",
+    "snippet": "GLM-5.2 is a flagship model built for the era of long-horizon tasks. With truly usable 1M-token context, it has been tested to handle project-scale engineering ...",
+    "host_name": "docs.z.ai",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1u9pgi6/what_is_glm52_inside_zais_744bparameter_agentic",
+    "name": "What Is GLM-5.2? Inside Z.ai's 744B-Parameter Agentic AI Model",
+    "snippet": "The most significant strength of GLM-5.2 AI model is its ability to handle coding and software development including games. While most AI models ...",
+    "host_name": "www.reddit.com",
+    "rank": 3,
+    "date": "Jun 18, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.latent.space/p/ainews-glm-gpt-glm-52-passes-vibe",
+    "name": "[AINews] GLM-5.2 is the real deal; Z.ai forecasts Open Fable by EOY",
+    "snippet": "GLM-5.2 passes vibe check; Z.ai forecasts Open Fable by December. With GLM-5.2 passing everyone's vibe check, the open models story finally ...",
+    "host_name": "www.latent.space",
+    "rank": 4,
+    "date": "Jun 18, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://developers.cloudflare.com/changelog/post/2026-06-16-glm-52-workers-ai",
+    "name": "Introducing GLM-5.2 on Workers AI · Changelog - Cloudflare Docs",
+    "snippet": "Introducing GLM-5.2 on Workers AI · Agentic coding: Designed for autonomous coding tasks, long-horizon planning, and complex software engineering ...",
+    "host_name": "developers.cloudflare.com",
+    "rank": 5,
+    "date": "Jun 15, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://z.ai/blog/glm-5",
+    "name": "GLM-5: From Vibe Coding to Agentic Engineering - Z.ai",
+    "snippet": "We are launching GLM-5, targeting complex systems engineering and long-horizon agentic tasks. Scaling is still one of the most important ...",
+    "host_name": "z.ai",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.datacamp.com/blog/glm-5-2",
+    "name": "GLM-5.2: Features, Setup, Benchmarks, and Model Switching Guide",
+    "snippet": "GLM-5.2 from Z.ai offers a 1M token context window, high and max reasoning modes, and free access. Learn how to set it up in Claude Code, ...",
+    "host_name": "www.datacamp.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost",
+    "name": "Z.ai's open-weights GLM-5.2 beats GPT-5.5 on multiple long-horizon",
+    "snippet": "The model also features an upgraded Multi-Token Prediction (MTP) ... The most disruptive aspect of the GLM-5.2 release is its licensing.",
+    "host_name": "venturebeat.com",
+    "rank": 8,
+    "date": "Jun 16, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Qmw8YBWcTis",
+    "name": "GLM 5.2: NEW Chinese AI is INSANE! - YouTube",
+    "snippet": "Get the Agent OS + GLM 5.2 Setup https://www.skool.com/ai-profit-lab-7462/about Want to make money and save time with AI?",
+    "host_name": "www.youtube.com",
+    "rank": 9,
+    "date": "Jun 13, 2026",
+    "favicon": ""
+  }
+]

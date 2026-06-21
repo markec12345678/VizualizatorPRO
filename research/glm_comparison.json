@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1edjjpo/side_by_side_comparison_llama_405b_vs_gpt4o_mini",
+    "name": "Side By Side Comparison Llama 405B Vs GPT-4o Mini Vs Claude",
+    "snippet": "GLM-4.6 outperforms claude-4-5-sonnet while being ~8x cheaper · GLM-5.2 (max) is currently the third best model available, across both open and ...",
+    "host_name": "www.reddit.com",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.facebook.com/groups/vibecodinglife/posts/1876477166274145",
+    "name": "glm-4.6 vs Sonnet 4.5 vs gpt 5 codex - which one is the best?",
+    "snippet": "GLM 4.6 for value/money Sonnet 4.5 for precise instruction following and overall best, but not for debugging GPT 5 Codex for debugging, ...",
+    "host_name": "www.facebook.com",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://localaimaster.com/blog/gpt-4o-vs-claude-35-sonnet-2025-comparison",
+    "name": "GPT-4o vs Claude 3.5 Sonnet: Which Is Better for Coding? (2026)",
+    "snippet": "GPT-4o or Claude 3.5 Sonnet? GPT-4o: 90.4% MMLU, faster. Claude: 88.7% MMLU, better safety. I compared both for coding, writing & enterprise ...",
+    "host_name": "localaimaster.com",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=15IVfQVAN0I",
+    "name": "Claude Sonnet 4.5 vs GLM 4.6: Who Wins? - YouTube",
+    "snippet": "... gpt-prompts - Join our FREE AI SEO Accelerator here: https ... Claude Sonnet 4.5 vs GLM 4.6: Who Wins?. 8.2K views · 8 months ...",
+    "host_name": "www.youtube.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://galileo.ai/blog/claude-3-5-sonnet-vs-gpt-4o-enterprise-ai-model-comparison",
+    "name": "Claude 3.5 Sonnet vs GPT 4o: Model Comparison 2025 - Galileo AI",
+    "snippet": "ML engineers: Compare Claude 3.5 Sonnet vs GPT 4o capabilities, context windows, pricing, and real-world performance for enterprise AI ...",
+    "host_name": "galileo.ai",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://medium.com/ai-software-engineer/i-tested-claude-sonnet-4-5-vs-glm-4-6-for-coding-and-discovered-how-to-save-money-14de611c89e2",
+    "name": "I Tested Claude Sonnet 4.5 vs GLM 4.6 for Coding (And Discovered",
+    "snippet": "What's Bad with Claude Sonnet 4.5 · Slower: 3 minutes longer than GLM · More Expensive: 20x more costly than GLM (for this task) · Documentation ...",
+    "host_name": "medium.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://neoteric.eu/blog/claude-3-5-sonnet-vs-gpt-4o-and-4o-mini",
+    "name": "Claude 3.5 Sonnet vs. GPT-4o and GPT-4o mini — key differences",
+    "snippet": "Claude 3.5 Sonnet is capable of handling text and image inputs,; GPT-4o extends these capabilities further by also supporting audio and video, ...",
+    "host_name": "neoteric.eu",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.linkedin.com/posts/juliangoldieseo_claude-sonnet-45-vs-glm-46-who-wins-activity-7380130408882970624-N7YG",
+    "name": "Claude Sonnet 4.5 vs GLM 4.6: Who Wins? | Julian Goldie - LinkedIn",
+    "snippet": "If you want speed, go with Sonnet. If you want maximum detail and you have huge context needs, GLM 4.6 is really good. So here's my verdict. If ...",
+    "host_name": "www.linkedin.com",
+    "rank": 7,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docsbot.ai/models/compare/glm-5-2/claude-sonnet-4-6",
+    "name": "GLM-5.2 vs Claude Sonnet 4.6 - DocsBot",
+    "snippet": "Claude Sonnet 4.6 is roughly 3.1x more expensive compared to GLM-5.2 for input and output tokens.",
+    "host_name": "docsbot.ai",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://cirra.ai/articles/glm-4-6-vs-claude-sonnet-comparison",
+    "name": "GLM-4.6 vs Claude Sonnet: A Performance & Cost Analysis - Cirra AI",
+    "snippet": "Overall, GLM-4.6 matches Claude 4.5 on context and greatly on price (over 90% cheaper token costs), but lacks some of the customized ecosystem ( ...",
+    "host_name": "cirra.ai",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]

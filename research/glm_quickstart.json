@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://docs.z.ai/guides/overview/quick-start",
+    "name": "Quick Start - Overview - Z.AI DEVELOPER DOCUMENT",
+    "snippet": "Access Z.AI Open Platform, Register or Login. · Access Billing Page to top up if needed. · Create an API Key in the API Keys management page.",
+    "host_name": "docs.z.ai",
+    "rank": 0,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.openclaw.ai/providers/zai",
+    "name": "Z.AI - OpenClaw Docs",
+    "snippet": "Z.AI is the API platform for GLM models. It provides REST APIs for GLM and uses API keys for authentication. Create your API key in the Z.AI console.",
+    "host_name": "docs.openclaw.ai",
+    "rank": 1,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://docs.z.ai/devpack/quick-start",
+    "name": "Quick Start - Overview - Z.AI DEVELOPER DOCUMENT",
+    "snippet": "This guide will help you get started with GLM Coding Plan in minutes—from subscribing to using GLM models in officially supported tools and products. Using the ...",
+    "host_name": "docs.z.ai",
+    "rank": 2,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1nt99fp/glm46_now_accessible_via_api",
+    "name": "GLM-4.6 now accessible via API : r/LocalLLaMA - Reddit",
+    "snippet": "Z.AI GLM OpenAI compatible endpoint will auto trim your input if it larger than its context size rather than return an error as it should. You ...",
+    "host_name": "www.reddit.com",
+    "rank": 3,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://github.com/NousResearch/hermes-agent/issues/4167",
+    "name": "Z.AI / GLM integration fails: Access token missing required scope",
+    "snippet": "Standard Z.AI API keys do not include this scope. A possible fix would be to use direct API calls for Z.AI instead of minting agent keys. Proposed Fix (optional).",
+    "host_name": "github.com",
+    "rank": 4,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=oRlCs8635h4",
+    "name": "GLM-4.6: You Can Build AI Agents 85% Cheaper Than Claude 4.5?",
+    "snippet": "I recently tested building AI agents using the 2 of the latest and strongest AI models: GLM-4.6 by Z.ai and Claude 4.5 by Anthropic.",
+    "host_name": "www.youtube.com",
+    "rank": 5,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://news.ycombinator.com/item?id=45856790",
+    "name": "I just asked glm-4.6 how to setup a z.ai api key with claude code and",
+    "snippet": "I just asked glm-4.6 how to setup a z.ai api key with claude code and it kept on saying it has no idea what claude code is... Quite funny, actually.",
+    "host_name": "news.ycombinator.com",
+    "rank": 6,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://developer.puter.com/tutorials/free-unlimited-zai-glm-api",
+    "name": "Free, Unlimited Z.AI GLM API - Puter.js",
+    "snippet": "This tutorial will show you how to use Puter.js to access Z.AI GLM models, including GLM 5.2, GLM 5.1, GLM 5 Turbo, GLM 5, GLM 4.7, GLM 4.7 ...",
+    "host_name": "developer.puter.com",
+    "rank": 7,
+    "date": "Jun 17, 2026",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.together.ai/models/glm-4-6",
+    "name": "GLM-4.6 API - Together AI",
+    "snippet": "Quickstart docs · Deploy model. Start building on Together AI. From optimized training and model shaping to large-scale production inference.",
+    "host_name": "www.together.ai",
+    "rank": 8,
+    "date": "",
+    "favicon": ""
+  },
+  {
+    "url": "https://www.typingmind.com/guide/venice/zai-org-glm-4.6v",
+    "name": "Connect and use GLM 4.6V from Venice AI with API Key - TypingMind",
+    "snippet": "Learn how to access and use GLM 4.6V with your Venice AI API key through TypingMind. Get started with this powerful AI model in minutes. Venice.",
+    "host_name": "www.typingmind.com",
+    "rank": 9,
+    "date": "",
+    "favicon": ""
+  }
+]
