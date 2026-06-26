@@ -101,6 +101,31 @@ Izvajalci balkonskih ograd in keramike izgubljajo posle ker stranke **ne morejo 
 - Nov "Moji materiali" tab v katalogu
 - Vsi custom materiali shranjeni v bazi (Prisma)
 
+### 📷 AR vizualizacija v realnem času
+- Real-time prikaz ograd skozi kamero mobilnega telefona
+- MediaDevices API za zadnjo kamero (facingMode: environment)
+- Canvas 2D za risanje ograd v realnem času
+- Tap za dodajanje stebričkov z oštevilčenjem
+- Izbira profila med AR načinom (WPC, Inox, ALU, Steklo)
+- Barvno kodirani profili glede na material
+- Vertikalne palice za WPC-V in ALU profile
+- Capture gumb za zajem posnetkov
+- Zgodovina AR posnetkov (zadnjih 6)
+- Prenos posnetkov kot JPEG
+- Fullscreen način za boljšo izkušnjo
+- Navodila za uporabo v aplikaciji
+
+### 🔐 Multi-tenant avtentikacija
+- NextAuth.js v4 z Credentials provider
+- Registracija novih firm (organizacij) z admin uporabnikom
+- 4 vloge uporabnikov: ADMIN, VODJA, MONTER, SKLADISCE
+- Bcrypt hashing gesel (12 rounds)
+- JWT session z 30-dnevno veljavnostjo
+- Vsaka organizacija ima svoje paket (trial/pro/agency)
+- Omejitve: max uporabnikov, max vizualizacij
+- SessionProvider za client-side auth state
+- AuthDialog komponenta z login/register tab-oma
+
 ---
 
 ## 🛠️ Tehnološki sklad
@@ -115,6 +140,8 @@ Izvajalci balkonskih ograd in keramike izgubljajo posle ker stranke **ne morejo 
 | **Email** | [Resend](https://resend.com/) |
 | **PDF** | [jsPDF](https://github.com/parallax/jsPDF) + jspdf-autotable |
 | **PWA** | Service Worker + Web Manifest |
+| **Avtentikacija** | [NextAuth.js v4](https://next-auth.js.org/) + bcryptjs |
+| **AR** | MediaDevices API + Canvas 2D |
 | **Paketni upravitelj** | [Bun](https://bun.sh/) |
 | **Linting** | ESLint 9 + eslint-config-next |
 
@@ -373,10 +400,11 @@ bun run start
 - [x] **PWA z offline delovanjem** (Service Worker + manifest)
 - [x] **PDF izvoz ponudbe** z vizualizacijo (jsPDF)
 - [x] **Custom material upload** (firme dodajajo svoje materiale)
+- [x] **AR mode** (real-time vizualizacija skozi kamero z MediaDevices)
+- [x] **Multi-tenant** arhitektura (NextAuth + 4 vloge + organizacije)
 - [ ] **Stripe integracija** za mesečne naročnine
-- [ ] **Multi-tenant** arhitektura (vsaka firma svoj račun)
 - [ ] **Mobilna aplikacija** (React Native ali Capacitor)
-- [ ] **AR mode** (WebXR za real-time vizualizacijo skozi kamero)
+- [ ] **WebXR AR** za bolj napredno vizualizacijo z globino
 
 ---
 
