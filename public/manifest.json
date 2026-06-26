@@ -1,0 +1,47 @@
+{
+  "name": "VizualizatorPRO",
+  "short_name": "Vizualizator",
+  "description": "AI vizualizacije za prodajo balkonskih ograd in keramike",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#f59e0b",
+  "orientation": "any",
+  "lang": "sl-SI",
+  "scope": "/",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Nov projekt",
+      "short_name": "Nov",
+      "description": "Začni z novo vizualizacijo",
+      "url": "/?action=new"
+    },
+    {
+      "name": "Admin panel",
+      "short_name": "Admin",
+      "description": "Pregled leadov",
+      "url": "/#admin"
+    }
+  ]
+}

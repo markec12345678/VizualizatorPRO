@@ -13,6 +13,7 @@ import { ImageUploader } from '@/components/vizualizator/image-uploader'
 import { MaterialSelector } from '@/components/vizualizator/material-selector'
 import { ResultViewer } from '@/components/vizualizator/result-viewer'
 import { AdminPanel } from '@/components/vizualizator/admin-panel'
+import { PdfExport } from '@/components/vizualizator/pdf-export'
 import { useToast } from '@/hooks/use-toast'
 import type { CatalogMaterial } from '@/lib/catalog'
 
@@ -318,6 +319,22 @@ export default function Home() {
                 <div className="mb-4">
                   <h2 className="text-lg font-semibold text-foreground">
                     Želiš to orodje za svojo firmo?
+                  </h2>
+                  <p className="text-sm text-muted-foreground mt-1">
+                    Pusti kontakt — pripravili smo demo s tvojim materialom
+                  </p>
+                </div>
+                <PdfExport
+                  originalImage={imageBase64}
+                  resultImage={resultImage}
+                  material={selectedMaterial}
+                />
+              </Card>
+
+              <Card className="p-6">
+                <div className="mb-4">
+                  <h2 className="text-lg font-semibold text-foreground">
+                    Pošlji povpraševanje
                   </h2>
                   <p className="text-sm text-muted-foreground mt-1">
                     Pusti kontakt — pripravili smo demo s tvojim materialom

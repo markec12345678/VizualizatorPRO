@@ -75,6 +75,32 @@ Izvajalci balkonskih ograd in keramike izgubljajo posle ker stranke **ne morejo 
 - Statistike: skupno leadov, vizualizacije, stopnja uspešnosti
 - Direktni mailto/tel povezave za hitro kontaktiranje
 
+### 📄 PDF ponudba z vizualizacijo
+- Profesionalno oblikovana A4 ponudba (jsPDF + autotable)
+- Vključuje pred/po vizualizacijo
+- Avtomatski izračun cene (površina × cena/m² + DDV 22%)
+- Polja za stranko, projekt, opombe, garancijo
+- Številka ponudbe in datum avtomatsko generirana
+- Antracit + amber barvna shema ( profesionalen B2B videz)
+
+### 📱 PWA z offline delovanjem
+- Service Worker za caching statičnih resursov
+- Web Manifest za namestitev na domači zaslon
+- Custom app ikone (192x192, 512x512, AI generirane)
+- Cache-First strategija za slike materialov
+- Network-First strategija za API zahteve
+- Background Sync za lead form (ko je povezava nazaj)
+- Push notifications (pripravljeno za prihodnost)
+- Custom offline stran z VizualizatorPRO branding
+
+### 🎨 Custom material upload
+- Firme dodajajo svoje materiale v katalog
+- Upload reference slike (z avtomatsko kompresijo)
+- AI prompt hint za generiranje vizualizacij
+- Specifikacije: cena, dimenzije, barva, garancija
+- Nov "Moji materiali" tab v katalogu
+- Vsi custom materiali shranjeni v bazi (Prisma)
+
 ---
 
 ## 🛠️ Tehnološki sklad
@@ -87,6 +113,8 @@ Izvajalci balkonskih ograd in keramike izgubljajo posle ker stranke **ne morejo 
 | **Baza** | [Prisma ORM 6](https://www.prisma.io/) + SQLite |
 | **AI vizualizacija** | [Replicate](https://replicate.com/) ControlNet (primarni), [Z.ai GLM-5.2](https://z.ai) (fallback) |
 | **Email** | [Resend](https://resend.com/) |
+| **PDF** | [jsPDF](https://github.com/parallax/jsPDF) + jspdf-autotable |
+| **PWA** | Service Worker + Web Manifest |
 | **Paketni upravitelj** | [Bun](https://bun.sh/) |
 | **Linting** | ESLint 9 + eslint-config-next |
 
@@ -342,13 +370,13 @@ bun run start
 - [x] Admin panel z statistikami
 - [x] Pred/po drsnik
 - [x] Prave referenčne slike (AI generirane)
-- [ ] **PWA z offline delovanjem** (Service Worker)
-- [ ] **PDF izvoz ponudbe** z vizualizacijo
+- [x] **PWA z offline delovanjem** (Service Worker + manifest)
+- [x] **PDF izvoz ponudbe** z vizualizacijo (jsPDF)
+- [x] **Custom material upload** (firme dodajajo svoje materiale)
 - [ ] **Stripe integracija** za mesečne naročnine
 - [ ] **Multi-tenant** arhitektura (vsaka firma svoj račun)
 - [ ] **Mobilna aplikacija** (React Native ali Capacitor)
 - [ ] **AR mode** (WebXR za real-time vizualizacijo skozi kamero)
-- [ ] **Custom material upload** (firme dodajo svoje materiale)
 
 ---
 

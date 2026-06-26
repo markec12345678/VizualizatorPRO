@@ -1,7 +1,7 @@
 'use client'
 
-import { useState } from 'react'
-import { Check, Layers, Grid3x3 } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { Check, Layers, Grid3x3, User } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
@@ -11,6 +11,7 @@ import {
   type CatalogMaterial,
   type MaterialCategory,
 } from '@/lib/catalog'
+import { CustomMaterialUpload } from './custom-material-upload'
 
 interface MaterialSelectorProps {
   selectedId: string | null
@@ -18,7 +19,57 @@ interface MaterialSelectorProps {
 }
 
 export function MaterialSelector({ selectedId, onSelect }: MaterialSelectorProps) {
-  const [activeCategory, setActiveCategory] = useState<MaterialCategory>('WPC_OGRAJA')
+  const [activeCategory, setActiveCategory] = useState<MaterialCategory | 'CUSTOM'>('WPC_OGRAJA')
+  const [customMaterials, setCustomMaterials] = useState<CatalogMaterial[]>([])
+
+  const reloadCustomMaterials = async () => {
+    try {
+      const res = await fetch('/api/materials/custom')
+      const data = await res.json()
+      if (data.materials) {
+        setCustomMaterials(data.materials.map((m: any) => ({
+          id: m.id,
+          category: m.category,
+          name: m.name,
+          description: m.description || '',
+          pricePerSqm: m.pricePerSqm || undefined,
+          referenceImage: m.referenceImage || '',
+          promptHint: m.promptHint,
+          specifications: m.specifications || { type: '' },
+        })))
+      }
+    } catch (err) {
+      console.error('Napaka pri pridobivanju custom materialov:', err)
+    }
+  }
+
+  useEffect(() => {
+    let mounted = true
+    
+    const load = async () => {
+      try {
+        const res = await fetch('/api/materials/custom')
+        const data = await res.json()
+        if (mounted && data.materials) {
+          setCustomMaterials(data.materials.map((m: any) => ({
+            id: m.id,
+            category: m.category,
+            name: m.name,
+            description: m.description || '',
+            pricePerSqm: m.pricePerSqm || undefined,
+            referenceImage: m.referenceImage || '',
+            promptHint: m.promptHint,
+            specifications: m.specifications || { type: '' },
+          })))
+        }
+      } catch (err) {
+        console.error('Napaka pri pridobivanju custom materialov:', err)
+      }
+    }
+    
+    load()
+    return () => { mounted = false }
+  }, [])
 
   return (
     <Card className="overflow-hidden">
@@ -37,15 +88,22 @@ export function MaterialSelector({ selectedId, onSelect }: MaterialSelectorProps
           )}
         </div>
 
-        <Tabs value={activeCategory} onValueChange={(v) => setActiveCategory(v as MaterialCategory)}>
-          <TabsList className="grid w-full grid-cols-2 mb-4">
+        <Tabs value={activeCategory} onValueChange={(v) => setActiveCategory(v as MaterialCategory | 'CUSTOM')}>
+          <TabsList className="grid w-full grid-cols-3 mb-4">
             <TabsTrigger value="WPC_OGRAJA" className="flex items-center gap-2">
               <Layers className="h-4 w-4" />
-              Balkonske ograje ({WPC_PROFILES.length})
+              <span className="hidden sm:inline">Ograje ({WPC_PROFILES.length})</span>
+              <span className="sm:hidden">{WPC_PROFILES.length}</span>
             </TabsTrigger>
             <TabsTrigger value="KERAMIKA" className="flex items-center gap-2">
               <Grid3x3 className="h-4 w-4" />
-              Keramika ({CERAMIC_TILES.length})
+              <span className="hidden sm:inline">Keramika ({CERAMIC_TILES.length})</span>
+              <span className="sm:hidden">{CERAMIC_TILES.length}</span>
+            </TabsTrigger>
+            <TabsTrigger value="CUSTOM" className="flex items-center gap-2">
+              <User className="h-4 w-4" />
+              <span className="hidden sm:inline">Moji ({customMaterials.length})</span>
+              <span className="sm:hidden">{customMaterials.length}</span>
             </TabsTrigger>
           </TabsList>
 
@@ -72,6 +130,31 @@ export function MaterialSelector({ selectedId, onSelect }: MaterialSelectorProps
                   onSelect={() => onSelect(material)}
                 />
               ))}
+            </div>
+          </TabsContent>
+
+          <TabsContent value="CUSTOM" className="mt-0">
+            <div className="space-y-3">
+              <CustomMaterialUpload onMaterialAdded={reloadCustomMaterials} />
+              {customMaterials.length === 0 ? (
+                <div className="text-center py-8 text-sm text-muted-foreground">
+                  <User className="h-8 w-8 mx-auto mb-2 opacity-40" />
+                  Še nimaš dodanih lastnih materialov.
+                  <br />
+                  Klikni &quot;Dodaj svoj material&quot; zgoraj.
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                  {customMaterials.map((material) => (
+                    <MaterialCard
+                      key={material.id}
+                      material={material}
+                      isSelected={selectedId === material.id}
+                      onSelect={() => onSelect(material)}
+                    />
+                  ))}
+                </div>
+              )}
             </div>
           </TabsContent>
         </Tabs>

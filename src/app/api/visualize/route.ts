@@ -28,14 +28,34 @@ export async function POST(request: NextRequest) {
     }
 
     const material = getMaterialById(materialId)
-    if (!material) {
-      return NextResponse.json(
-        { error: 'Material ni najden v katalogu' },
-        { status: 404 }
-      )
+    
+    // Če material ni v statičnem katalogu, preveri v bazi (custom material)
+    let finalMaterial = material
+    if (!finalMaterial) {
+      const dbMaterial = await db.material.findUnique({
+        where: { id: materialId }
+      })
+      
+      if (!dbMaterial) {
+        return NextResponse.json(
+          { error: 'Material ni najden v katalogu' },
+          { status: 404 }
+        )
+      }
+      
+      finalMaterial = {
+        id: dbMaterial.id,
+        category: dbMaterial.category as any,
+        name: dbMaterial.name,
+        description: dbMaterial.description || '',
+        pricePerSqm: dbMaterial.pricePerSqm || undefined,
+        referenceImage: dbMaterial.referenceImage || '',
+        promptHint: dbMaterial.promptHint || '',
+        specifications: dbMaterial.specifications ? JSON.parse(dbMaterial.specifications) : { type: '' },
+      }
     }
 
-    if (!ALLOWED_CATEGORIES.includes(material.category)) {
+    if (!ALLOWED_CATEGORIES.includes(finalMaterial.category)) {
       return NextResponse.json(
         { error: 'Nedovoljena kategorija materiala' },
         { status: 400 }
@@ -63,10 +83,10 @@ export async function POST(request: NextRequest) {
         projectId: actualProjectId,
         originalImage: originalImage.substring(0, 100),
         status: 'PROCESSING',
-        category: material.category,
-        materialId: material.id,
-        materialName: material.name,
-        prompt: material.promptHint,
+        category: finalMaterial.category,
+        materialId: finalMaterial.id,
+        materialName: finalMaterial.name,
+        prompt: finalMaterial.promptHint,
       },
     })
 
@@ -76,7 +96,7 @@ export async function POST(request: NextRequest) {
 
     if (process.env.REPLICATE_API_TOKEN) {
       try {
-        resultImage = await generateWithReplicate(originalImage, material, customPrompt)
+        resultImage = await generateWithReplicate(originalImage, finalMaterial, customPrompt)
         mode = 'replicate'
       } catch (err) {
         console.error('Replicate generiranje ni uspelo:', err)
@@ -86,7 +106,7 @@ export async function POST(request: NextRequest) {
 
     if (!resultImage) {
       try {
-        resultImage = await generateWithZAI(originalImage, material, customPrompt)
+        resultImage = await generateWithZAI(originalImage, finalMaterial, customPrompt)
         mode = 'zai-fallback'
       } catch (err) {
         console.error('Z-AI generiranje ni uspelo:', err)
@@ -97,7 +117,7 @@ export async function POST(request: NextRequest) {
     }
 
     if (!resultImage) {
-      resultImage = await generateDemoFallback(originalImage, material)
+      resultImage = await generateDemoFallback(originalImage, finalMaterial)
       mode = 'demo'
     }
 
@@ -114,8 +134,8 @@ export async function POST(request: NextRequest) {
       })
 
       sendVisualizationNotification({
-        materialName: material.name,
-        category: material.category,
+        materialName: finalMaterial.name,
+        category: finalMaterial.category,
         processingTime,
         mode,
       }).catch(err => console.error('Email notification failed:', err))
@@ -127,9 +147,9 @@ export async function POST(request: NextRequest) {
         processingTime,
         mode,
         material: {
-          id: material.id,
-          name: material.name,
-          category: material.category,
+          id: finalMaterial.id,
+          name: finalMaterial.name,
+          category: finalMaterial.category,
         },
       })
     } else {
