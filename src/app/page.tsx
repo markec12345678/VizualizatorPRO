@@ -14,6 +14,8 @@ import { MaterialSelector } from '@/components/vizualizator/material-selector'
 import { ResultViewer } from '@/components/vizualizator/result-viewer'
 import { AdminPanel } from '@/components/vizualizator/admin-panel'
 import { PdfExport } from '@/components/vizualizator/pdf-export'
+import { ArMode } from '@/components/vizualizator/ar-mode'
+import { UserMenu } from '@/components/vizualizator/user-menu'
 import { useToast } from '@/hooks/use-toast'
 import type { CatalogMaterial } from '@/lib/catalog'
 
@@ -199,6 +201,7 @@ export default function Home() {
                   DEMO način
                 </Badge>
               )}
+              <UserMenu />
             </div>
           </div>
         </div>
@@ -314,6 +317,8 @@ export default function Home() {
                 onReset={handleReset}
                 onDownload={handleDownload}
               />
+
+              <ArMode />
 
               <Card className="p-6">
                 <div className="mb-4">
