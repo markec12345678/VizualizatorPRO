@@ -1,0 +1,134 @@
+# PostgreSQL shema za VizualizatorPRO (produkcija)
+# 
+# Uporaba:
+# 1. Kopiraj to datoteko v prisma/schema.prisma
+# 2. Nastavi DATABASE_URL na PostgreSQL connection string
+# 3. Zaženi: bun run db:migrate deploy
+#
+# Primer DATABASE_URL:
+# postgresql://user:password@localhost:5432/vizualizatorpro?schema=public
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// === MULTI-TENANT MODELI ===
+
+model Organization {
+  id                String   @id @default(cuid())
+  name              String
+  slug              String   @unique
+  plan              String   @default("trial")
+  maxUsers          Int      @default(1)
+  maxVisualizations Int      @default(10)
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  users            User[]
+  projects         Project[]
+  materials        Material[]
+  visualizations   Visualization[]
+
+  @@index([plan])
+}
+
+model User {
+  id            String   @id @default(cuid())
+  email         String   @unique
+  name          String?
+  passwordHash  String?
+  role          String   @default("MONTER")
+  organizationId String?
+  organization  Organization? @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  projects      Project[]
+
+  @@index([organizationId])
+  @@index([role])
+}
+
+model Project {
+  id              String   @id @default(cuid())
+  title           String
+  customerName    String?
+  customerEmail   String?
+  customerPhone   String?
+  address         String?
+  notes           String?
+  status          String   @default("NACRTOVANO")
+  
+  organizationId String?
+  organization   Organization? @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  
+  assignedToId   String?
+  assignedTo     User?    @relation(fields: [assignedToId], references: [id], onDelete: SetNull)
+  
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  visualizations Visualization[]
+
+  @@index([organizationId, status])
+  @@index([organizationId, createdAt])
+  @@index([assignedToId])
+}
+
+model Visualization {
+  id              String   @id @default(cuid())
+  projectId       String
+  project         Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  
+  organizationId String?
+  organization   Organization? @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  
+  originalImage   String
+  resultImage     String?
+  status          String   @default("PENDING")
+  errorMessage    String?
+  
+  category        String
+  materialId      String
+  materialName    String
+  prompt          String?
+  
+  processingTime  Int?
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([projectId])
+  @@index([organizationId, createdAt])
+  @@index([status])
+  @@index([category])
+}
+
+model Material {
+  id              String   @id @default(cuid())
+  category        String
+  name            String
+  description     String?
+  pricePerSqm     Float?
+  
+  referenceImage  String?
+  promptHint      String?
+  
+  specifications  Json?
+  
+  organizationId String?
+  organization   Organization? @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  
+  active          Boolean  @default(true)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([organizationId, active])
+  @@index([category])
+}

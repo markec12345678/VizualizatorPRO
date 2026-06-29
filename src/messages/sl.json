@@ -1,0 +1,248 @@
+{
+  "common": {
+    "appName": "VizualizatorPRO",
+    "tagline": "AI vizualizacije za prodajo",
+    "loading": "Nalagam...",
+    "error": "Napaka",
+    "success": "Uspeh",
+    "save": "Shrani",
+    "cancel": "Prekliči",
+    "delete": "Izbriši",
+    "edit": "Uredi",
+    "close": "Zapri",
+    "back": "Nazaj",
+    "next": "Naprej",
+    "previous": "Prejšnji",
+    "search": "Iskanje",
+    "filter": "Filter",
+    "refresh": "Osveži",
+    "download": "Prenesi",
+    "upload": "Naloži"
+  },
+  "nav": {
+    "home": "Domov",
+    "dashboard": "Nadzorna plošča",
+    "projects": "Projekti",
+    "materials": "Materiali",
+    "team": "Ekipa",
+    "settings": "Nastavitve",
+    "admin": "Admin",
+    "login": "Prijava",
+    "logout": "Odjava",
+    "register": "Registracija"
+  },
+  "hero": {
+    "title": "Stranka vidi rezultat.",
+    "subtitle": "Kupi takoj.",
+    "description": "Profesionalno AI orodje za izvajalce balkonskih ograd in keramike. Fotorealistične vizualizacije na kraju samem — iz fotoaparata mobilnega telefona. WPC, Inox, Steklo, keramike vseh vrst.",
+    "conversionRate": "+47% stopnja konverzije z vizualizacijami",
+    "feature1": "Fotorealističen rezultat v 30 sekundah",
+    "feature2": "14 materialov v katalogu",
+    "feature3": "Deluje na mobilnem telefonu"
+  },
+  "upload": {
+    "title": "Fotografiraj ali naloži prostor",
+    "subtitle": "Posnemi balkon, sobo ali fasado — AI bo prikazal rezultat",
+    "imageLoaded": "Slika naložena",
+    "camera": "Fotografiraj",
+    "gallery": "Naloži iz galerije",
+    "dragHere": "Povleci sliko sem",
+    "orChoose": "ali izberi možnost spodaj",
+    "hint": "JPEG, PNG ali WebP · maksimalno 15MB · samodejna kompresija",
+    "ready": "Slika pripravljena za AI obdelavo",
+    "change": "Zamenjaj sliko",
+    "processing": "Obdelava slike..."
+  },
+  "materials": {
+    "title": "Izberi material",
+    "subtitle": "WPC ograje, Inox, Steklo in keramike — vse s tehničnimi specifikacijami",
+    "selected": "Material izbran",
+    "categoryWPC": "Balkonske ograje",
+    "categoryCeramic": "Keramika in ploščice",
+    "categoryColor": "Barvne kombinacije",
+    "categoryFacade": "Fasada",
+    "custom": "Moji",
+    "addCustom": "Dodaj svoj material",
+    "noCustom": "Še nimaš dodanih lastnih materialov.",
+    "pricePerSqm": "€/m²"
+  },
+  "visualize": {
+    "title": "Generiraj vizualizacijo",
+    "subtitle": "AI bo apliciral izbrani material na tvojo sliko",
+    "button": "Generiraj AI vizualizacijo",
+    "processing": "Generiram...",
+    "needImage": "Naloži sliko in izberi material",
+    "needMaterial": "Izberi material iz kataloga",
+    "needImageOnly": "Naloži sliko prostora"
+  },
+  "result": {
+    "title": "AI vizualizacija",
+    "subtitle": "Po izbiri materiala klikni \"Generiraj vizualizacijo\"",
+    "withMaterial": "Rezultat z materialom",
+    "download": "Prenesi",
+    "reset": "Ponovi",
+    "placeholder": "Tu bo prikazana AI vizualizacija",
+    "processing": "AI obdeluje sliko...",
+    "processingHint": "Generiranje fotorealistične vizualizacije",
+    "before": "PRED",
+    "after": "PO",
+    "sliderHint": "← Povleci za primerjavo pred / po →",
+    "success": "Vizualizacija pripravljena!",
+    "error": "Napaka pri generiranju"
+  },
+  "ar": {
+    "title": "AR vizualizacija v realnem času",
+    "subtitle": "Prikaži ograjo na balkonu skozi kamero — stranka jo vidi takoj",
+    "startCamera": "Zaženi AR kamero",
+    "stopCamera": "Ustavi kamero",
+    "live": "LIVE",
+    "tapToAdd": "👆 Tapni za dodajanje stebričkov",
+    "undo": "Razveljavi",
+    "clear": "Počisti",
+    "capture": "Posnetek",
+    "fullscreen": "Cel zaslon",
+    "profile": "Profil ograje",
+    "points": "točk",
+    "snapshots": "Zgodovina AR posnetkov",
+    "howToTitle": "Kako uporabljati AR",
+    "howTo1": "Zaženi AR kamero (zahteva HTTPS v produkciji)",
+    "howTo2": "Usmeri telefon proti balkonu",
+    "howTo3": "Izberi profil ograje (WPC, Inox, ALU...)",
+    "howTo4": "Tapni na zaslon za dodajanje stebričkov",
+    "howTo5": "Ograja se izriše v realnem času",
+    "howTo6": "Posnetek zajemi in shrani za ponudbo",
+    "errorCamera": "Tvoj brskalnik ne podpira dostopa do kamere",
+    "errorHttps": "HTTPS zahtevano za dostop do kamere. V produkcijskem okolju bo delovalo."
+  },
+  "pdf": {
+    "title": "PDF ponudba z vizualizacijo",
+    "subtitle": "Generiraj profesionalno ponudbo za stranko z vizualizacijo in ceno",
+    "needViz": "Najprej naloži sliko, izberi material in generiraj AI vizualizacijo.",
+    "customerName": "Ime stranke",
+    "customerAddress": "Naslov stranke",
+    "projectAddress": "Lokacija projekta",
+    "surfaceArea": "Površina (m²)",
+    "notes": "Opombe",
+    "totalPrice": "Cena skupaj:",
+    "download": "Prenesi PDF ponudbo",
+    "generating": "Generiram PDF..."
+  },
+  "lead": {
+    "title": "Želiš to orodje za svojo firmo?",
+    "subtitle": "Pusti kontakt — pripravili smo demo s tvojim materialom",
+    "sendTitle": "Pošlji povpraševanje",
+    "name": "Ime in priimek *",
+    "company": "Firma",
+    "email": "Email *",
+    "phone": "Telefon",
+    "message": "Sporočilo",
+    "messagePlaceholder": "Našli ste me preko... Zanima me...",
+    "submit": "Pošlji povpraševanje",
+    "success": "Hvala za povpraševanje!",
+    "successDesc": "Obravnavali smo vašo prijavo in se oglasili v 24 urah.",
+    "error": "Ne moremo sprejeti povpraševanja. Prosimo, pokličite nas.",
+    "needName": "Manjkajoči podatki",
+    "needNameDesc": "Vnesi vsaj ime in email."
+  },
+  "auth": {
+    "login": "Prijava",
+    "register": "Registracija firme",
+    "email": "Email",
+    "password": "Geslo",
+    "name": "Tvoje ime",
+    "orgName": "Ime firme",
+    "orgSlug": "URL identifikator",
+    "orgSlugHint": "Samo male črke, številke in vezaji",
+    "loginButton": "Prijavi se",
+    "registerButton": "Ustvari račun",
+    "passwordMin": "Geslo (min 6 znakov)",
+    "passwordTemp": "Začasno geslo (min 6 znakov)",
+    "passwordTempHint": "Uporabnik naj ga spremeni po prvi prijavi",
+    "role": "Vloga",
+    "trialInfo": "Trial paket: 10 AI vizualizacij, 1 uporabnik",
+    "loginSuccess": "Uspešna prijava",
+    "loginSuccessDesc": "Dobrodošli nazaj!",
+    "loginError": "Napaka pri prijavi",
+    "loginErrorDesc": "Napačen email ali geslo",
+    "registerSuccess": "Registracija uspešna!",
+    "registerSuccessDesc": "Organizacija je ustvarjena",
+    "registerError": "Napaka",
+    "logout": "Odjava"
+  },
+  "roles": {
+    "ADMIN": "Administrator",
+    "VODJA": "Vodja",
+    "MONTER": "Monter",
+    "SKLADISCE": "Skladišče"
+  },
+  "plans": {
+    "trial": "Trial",
+    "pro": "Pro",
+    "agency": "Agency"
+  },
+  "dashboard": {
+    "title": "Nadzorna plošča",
+    "subtitle": "paketi",
+    "stats": {
+      "projects": "Projekti",
+      "visualizations": "Vizualizacije",
+      "team": "Ekipa",
+      "materials": "Materiali"
+    },
+    "usage": {
+      "visualizations": "Poraba vizualizacij",
+      "team": "Uporabniki v ekipi",
+      "remaining": "Še {{count}} na voljo",
+      "maxReached": "Dosežen maksimum"
+    },
+    "recent": {
+      "projects": "Zadnji projekti",
+      "visualizations": "Zadnje vizualizacije",
+      "noProjects": "Še ni projektov",
+      "noViz": "Še ni vizualizacij"
+    },
+    "team": {
+      "title": "Ekipa",
+      "addUser": "Dodaj uporabnika",
+      "removeConfirm": "Resnično želiš odstraniti {{name}} iz ekipe?",
+      "removeSuccess": "Uporabnik odstranjen",
+      "removeSuccessDesc": "{{name}} ni več v ekipi"
+    }
+  },
+  "admin": {
+    "title": "Admin panel",
+    "subtitle": "Za dostop vnesi admin geslo",
+    "password": "Admin geslo",
+    "unlock": "Odkleni admin panel",
+    "demoPassword": "Demo geslo:",
+    "stats": {
+      "leads": "Skupno leadov",
+      "visualizations": "Vizualizacije",
+      "success": "Uspešnost",
+      "failed": "Neuspešne"
+    },
+    "tabs": {
+      "leads": "Leadi",
+      "visualizations": "Vizualizacije"
+    },
+    "noLeads": "Ni leadov. Obiščite demo in oddajte testni lead."
+  },
+  "footer": {
+    "slovenia": "Slovenija",
+    "rights": "Vse pravice pridržane. AI tehnologija: GLM-5.2 (Z.ai) + ControlNet."
+  },
+  "features": {
+    "fast": {
+      "title": "Hitro kot blisk",
+      "desc": "30 sekund od slike do vizualizacije. Monter dela na terenu, stranka vidi rezultat takoj."
+    },
+    "professional": {
+      "title": "Profesionalno",
+      "desc": "Fotorealističen prikaz z originalno perspektivo. Stranka vidi svoj balkon, ne generično predlogo."
+    },
+    "sales": {
+      "title": "Dokazano poveča prodajo",
+      "desc": "Izvajalci poročajo o 30-50% višji stopnji konverzije z vizualizacijami. Stranka vidi, stranka kupi."
+    }
+  }
+}
