@@ -1,0 +1,248 @@
+{
+  "common": {
+    "appName": "VizualizatorPRO",
+    "tagline": "AI visualizations for sales",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "refresh": "Refresh",
+    "download": "Download",
+    "upload": "Upload"
+  },
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "projects": "Projects",
+    "materials": "Materials",
+    "team": "Team",
+    "settings": "Settings",
+    "admin": "Admin",
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register"
+  },
+  "hero": {
+    "title": "Customer sees the result.",
+    "subtitle": "Buys immediately.",
+    "description": "Professional AI tool for balcony railing and ceramic contractors. Photorealistic visualizations on-site — from your mobile phone camera. WPC, Stainless Steel, Glass, all types of ceramics.",
+    "conversionRate": "+47% conversion rate with visualizations",
+    "feature1": "Photorealistic result in 30 seconds",
+    "feature2": "14 materials in catalog",
+    "feature3": "Works on mobile phone"
+  },
+  "upload": {
+    "title": "Photograph or upload a space",
+    "subtitle": "Take a photo of a balcony, room or facade — AI will show the result",
+    "imageLoaded": "Image loaded",
+    "camera": "Take photo",
+    "gallery": "Upload from gallery",
+    "dragHere": "Drag image here",
+    "orChoose": "or choose an option below",
+    "hint": "JPEG, PNG or WebP · max 15MB · auto compression",
+    "ready": "Image ready for AI processing",
+    "change": "Change image",
+    "processing": "Processing image..."
+  },
+  "materials": {
+    "title": "Select material",
+    "subtitle": "WPC railings, Stainless Steel, Glass and ceramics — all with technical specifications",
+    "selected": "Material selected",
+    "categoryWPC": "Balcony railings",
+    "categoryCeramic": "Ceramics and tiles",
+    "categoryColor": "Color combinations",
+    "categoryFacade": "Facade",
+    "custom": "Mine",
+    "addCustom": "Add your material",
+    "noCustom": "You don't have any custom materials yet.",
+    "pricePerSqm": "€/m²"
+  },
+  "visualize": {
+    "title": "Generate visualization",
+    "subtitle": "AI will apply the selected material to your image",
+    "button": "Generate AI visualization",
+    "processing": "Generating...",
+    "needImage": "Upload image and select material",
+    "needMaterial": "Select material from catalog",
+    "needImageOnly": "Upload space image"
+  },
+  "result": {
+    "title": "AI visualization",
+    "subtitle": "After selecting material, click \"Generate visualization\"",
+    "withMaterial": "Result with material",
+    "download": "Download",
+    "reset": "Reset",
+    "placeholder": "AI visualization will appear here",
+    "processing": "AI is processing the image...",
+    "processingHint": "Generating photorealistic visualization",
+    "before": "BEFORE",
+    "after": "AFTER",
+    "sliderHint": "← Drag to compare before / after →",
+    "success": "Visualization ready!",
+    "error": "Error generating"
+  },
+  "ar": {
+    "title": "Real-time AR visualization",
+    "subtitle": "Show railing on balcony through camera — customer sees it immediately",
+    "startCamera": "Start AR camera",
+    "stopCamera": "Stop camera",
+    "live": "LIVE",
+    "tapToAdd": "👆 Tap to add posts",
+    "undo": "Undo",
+    "clear": "Clear",
+    "capture": "Capture",
+    "fullscreen": "Fullscreen",
+    "profile": "Railing profile",
+    "points": "points",
+    "snapshots": "AR snapshots history",
+    "howToTitle": "How to use AR",
+    "howTo1": "Start AR camera (requires HTTPS in production)",
+    "howTo2": "Point phone towards balcony",
+    "howTo3": "Select railing profile (WPC, Inox, ALU...)",
+    "howTo4": "Tap screen to add posts",
+    "howTo5": "Railing renders in real-time",
+    "howTo6": "Capture snapshot and save for quote",
+    "errorCamera": "Your browser doesn't support camera access",
+    "errorHttps": "HTTPS required for camera access. Will work in production environment."
+  },
+  "pdf": {
+    "title": "PDF quote with visualization",
+    "subtitle": "Generate professional quote for customer with visualization and price",
+    "needViz": "First upload image, select material and generate AI visualization.",
+    "customerName": "Customer name",
+    "customerAddress": "Customer address",
+    "projectAddress": "Project location",
+    "surfaceArea": "Surface area (m²)",
+    "notes": "Notes",
+    "totalPrice": "Total price:",
+    "download": "Download PDF quote",
+    "generating": "Generating PDF..."
+  },
+  "lead": {
+    "title": "Want this tool for your company?",
+    "subtitle": "Leave contact — we prepared a demo with your material",
+    "sendTitle": "Send inquiry",
+    "name": "Full name *",
+    "company": "Company",
+    "email": "Email *",
+    "phone": "Phone",
+    "message": "Message",
+    "messagePlaceholder": "You found me via... I'm interested in...",
+    "submit": "Send inquiry",
+    "success": "Thank you for your inquiry!",
+    "successDesc": "We've received your request and will contact you within 24 hours.",
+    "error": "Cannot accept inquiry. Please call us.",
+    "needName": "Missing data",
+    "needNameDesc": "Enter at least name and email."
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Company registration",
+    "email": "Email",
+    "password": "Password",
+    "name": "Your name",
+    "orgName": "Company name",
+    "orgSlug": "URL identifier",
+    "orgSlugHint": "Only lowercase letters, numbers and dashes",
+    "loginButton": "Log in",
+    "registerButton": "Create account",
+    "passwordMin": "Password (min 6 characters)",
+    "passwordTemp": "Temporary password (min 6 characters)",
+    "passwordTempHint": "User should change it after first login",
+    "role": "Role",
+    "trialInfo": "Trial plan: 10 AI visualizations, 1 user",
+    "loginSuccess": "Login successful",
+    "loginSuccessDesc": "Welcome back!",
+    "loginError": "Login error",
+    "loginErrorDesc": "Wrong email or password",
+    "registerSuccess": "Registration successful!",
+    "registerSuccessDesc": "Organization created",
+    "registerError": "Error",
+    "logout": "Logout"
+  },
+  "roles": {
+    "ADMIN": "Administrator",
+    "VODJA": "Manager",
+    "MONTER": "Installer",
+    "SKLADISCE": "Warehouse"
+  },
+  "plans": {
+    "trial": "Trial",
+    "pro": "Pro",
+    "agency": "Agency"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "plan",
+    "stats": {
+      "projects": "Projects",
+      "visualizations": "Visualizations",
+      "team": "Team",
+      "materials": "Materials"
+    },
+    "usage": {
+      "visualizations": "Visualization usage",
+      "team": "Team members",
+      "remaining": "{{count}} remaining",
+      "maxReached": "Maximum reached"
+    },
+    "recent": {
+      "projects": "Recent projects",
+      "visualizations": "Recent visualizations",
+      "noProjects": "No projects yet",
+      "noViz": "No visualizations yet"
+    },
+    "team": {
+      "title": "Team",
+      "addUser": "Add user",
+      "removeConfirm": "Do you really want to remove {{name}} from the team?",
+      "removeSuccess": "User removed",
+      "removeSuccessDesc": "{{name}} is no longer in the team"
+    }
+  },
+  "admin": {
+    "title": "Admin panel",
+    "subtitle": "Enter admin password to access",
+    "password": "Admin password",
+    "unlock": "Unlock admin panel",
+    "demoPassword": "Demo password:",
+    "stats": {
+      "leads": "Total leads",
+      "visualizations": "Visualizations",
+      "success": "Success rate",
+      "failed": "Failed"
+    },
+    "tabs": {
+      "leads": "Leads",
+      "visualizations": "Visualizations"
+    },
+    "noLeads": "No leads. Visit demo and submit a test lead."
+  },
+  "footer": {
+    "slovenia": "Slovenia",
+    "rights": "All rights reserved. AI technology: GLM-5.2 (Z.ai) + ControlNet."
+  },
+  "features": {
+    "fast": {
+      "title": "Lightning fast",
+      "desc": "30 seconds from image to visualization. Installer works on-site, customer sees result immediately."
+    },
+    "professional": {
+      "title": "Professional",
+      "desc": "Photorealistic rendering with original perspective. Customer sees their balcony, not a generic template."
+    },
+    "sales": {
+      "title": "Proven to increase sales",
+      "desc": "Contractors report 30-50% higher conversion rate with visualizations. Customer sees, customer buys."
+    }
+  }
+}

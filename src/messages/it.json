@@ -1,0 +1,248 @@
+{
+  "common": {
+    "appName": "VizualizatorPRO",
+    "tagline": "Visualizzazioni AI per vendite",
+    "loading": "Caricamento...",
+    "error": "Errore",
+    "success": "Successo",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "delete": "Elimina",
+    "edit": "Modifica",
+    "close": "Chiudi",
+    "back": "Indietro",
+    "next": "Avanti",
+    "previous": "Precedente",
+    "search": "Cerca",
+    "filter": "Filtro",
+    "refresh": "Aggiorna",
+    "download": "Scarica",
+    "upload": "Carica"
+  },
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "projects": "Progetti",
+    "materials": "Materiali",
+    "team": "Squadra",
+    "settings": "Impostazioni",
+    "admin": "Admin",
+    "login": "Accedi",
+    "logout": "Esci",
+    "register": "Registrati"
+  },
+  "hero": {
+    "title": "Il cliente vede il risultato.",
+    "subtitle": "Compra subito.",
+    "description": "Strumento AI professionale per appaltatori di ringhiere da balcone e ceramica. Visualizzazioni fotorealistiche sul posto — dalla fotocamera del cellulare. WPC, Acciaio Inossidabile, Vetro, tutti i tipi di ceramica.",
+    "conversionRate": "+47% tasso di conversione con visualizzazioni",
+    "feature1": "Risultato fotorealistico in 30 secondi",
+    "feature2": "14 materiali nel catalogo",
+    "feature3": "Funziona sul cellulare"
+  },
+  "upload": {
+    "title": "Fotografa o carica uno spazio",
+    "subtitle": "Scatta una foto di un balcone, stanza o facciata — l'AI mostrerà il risultato",
+    "imageLoaded": "Immagine caricata",
+    "camera": "Scatta foto",
+    "gallery": "Carica dalla galleria",
+    "dragHere": "Trascina l'immagine qui",
+    "orChoose": "o scegli un'opzione qui sotto",
+    "hint": "JPEG, PNG o WebP · max 15MB · compressione automatica",
+    "ready": "Immagine pronta per l'elaborazione AI",
+    "change": "Cambia immagine",
+    "processing": "Elaborazione immagine..."
+  },
+  "materials": {
+    "title": "Seleziona materiale",
+    "subtitle": "Ringhiere WPC, Acciaio Inossidabile, Vetro e ceramica — tutti con specifiche tecniche",
+    "selected": "Materiale selezionato",
+    "categoryWPC": "Ringhiere da balcone",
+    "categoryCeramic": "Ceramica e piastrelle",
+    "categoryColor": "Combinazioni di colori",
+    "categoryFacade": "Facciata",
+    "custom": "Miei",
+    "addCustom": "Aggiungi il tuo materiale",
+    "noCustom": "Non hai ancora materiali personalizzati.",
+    "pricePerSqm": "€/m²"
+  },
+  "visualize": {
+    "title": "Genera visualizzazione",
+    "subtitle": "L'AI applicherà il materiale selezionato alla tua immagine",
+    "button": "Genera visualizzazione AI",
+    "processing": "Generazione...",
+    "needImage": "Carica immagine e seleziona materiale",
+    "needMaterial": "Seleziona materiale dal catalogo",
+    "needImageOnly": "Carica immagine dello spazio"
+  },
+  "result": {
+    "title": "Visualizzazione AI",
+    "subtitle": "Dopo aver selezionato il materiale, clicca \"Genera visualizzazione\"",
+    "withMaterial": "Risultato con materiale",
+    "download": "Scarica",
+    "reset": "Ripeti",
+    "placeholder": "La visualizzazione AI apparirà qui",
+    "processing": "L'AI sta elaborando l'immagine...",
+    "processingHint": "Generazione visualizzazione fotorealistica",
+    "before": "PRIMA",
+    "after": "DOPO",
+    "sliderHint": "← Trascina per confrontare prima / dopo →",
+    "success": "Visualizzazione pronta!",
+    "error": "Errore nella generazione"
+  },
+  "ar": {
+    "title": "Visualizzazione AR in tempo reale",
+    "subtitle": "Mostra ringhiera sul balcone attraverso la fotocamera — il cliente la vede subito",
+    "startCamera": "Avvia fotocamera AR",
+    "stopCamera": "Ferma fotocamera",
+    "live": "LIVE",
+    "tapToAdd": "👆 Tocca per aggiungere pali",
+    "undo": "Annulla",
+    "clear": "Pulisci",
+    "capture": "Istantanea",
+    "fullscreen": "Schermo intero",
+    "profile": "Profilo ringhiera",
+    "points": "punti",
+    "snapshots": "Cronologia istantanee AR",
+    "howToTitle": "Come usare AR",
+    "howTo1": "Avvia fotocamera AR (richiede HTTPS in produzione)",
+    "howTo2": "Punta il telefono verso il balcone",
+    "howTo3": "Seleziona profilo ringhiera (WPC, Inox, ALU...)",
+    "howTo4": "Tocca schermo per aggiungere pali",
+    "howTo5": "La ringhiera si renderizza in tempo reale",
+    "howTo6": "Cattura istantanea e salva per preventivo",
+    "errorCamera": "Il tuo browser non supporta l'accesso alla fotocamera",
+    "errorHttps": "HTTPS richiesto per l'accesso alla fotocamera. Funzionerà nell'ambiente di produzione."
+  },
+  "pdf": {
+    "title": "Preventivo PDF con visualizzazione",
+    "subtitle": "Genera preventivo professionale per cliente con visualizzazione e prezzo",
+    "needViz": "Prima carica immagine, seleziona materiale e genera visualizzazione AI.",
+    "customerName": "Nome cliente",
+    "customerAddress": "Indirizzo cliente",
+    "projectAddress": "Posizione progetto",
+    "surfaceArea": "Superficie (m²)",
+    "notes": "Note",
+    "totalPrice": "Prezzo totale:",
+    "download": "Scarica preventivo PDF",
+    "generating": "Generazione PDF..."
+  },
+  "lead": {
+    "title": "Vuoi questo strumento per la tua azienda?",
+    "subtitle": "Lascia i contatti — abbiamo preparato una demo con il tuo materiale",
+    "sendTitle": "Invia richiesta",
+    "name": "Nome e cognome *",
+    "company": "Azienda",
+    "email": "Email *",
+    "phone": "Telefono",
+    "message": "Messaggio",
+    "messagePlaceholder": "Mi hai trovato tramite... Sono interessato a...",
+    "submit": "Invia richiesta",
+    "success": "Grazie per la tua richiesta!",
+    "successDesc": "Abbiamo ricevuto la tua richiesta e ti contatteremo entro 24 ore.",
+    "error": "Impossibile accettare la richiesta. Chiamaci.",
+    "needName": "Dati mancanti",
+    "needNameDesc": "Inserisci almeno nome ed email."
+  },
+  "auth": {
+    "login": "Accedi",
+    "register": "Registrazione azienda",
+    "email": "Email",
+    "password": "Password",
+    "name": "Il tuo nome",
+    "orgName": "Nome azienda",
+    "orgSlug": "Identificatore URL",
+    "orgSlugHint": "Solo lettere minuscole, numeri e trattini",
+    "loginButton": "Accedi",
+    "registerButton": "Crea account",
+    "passwordMin": "Password (min 6 caratteri)",
+    "passwordTemp": "Password temporanea (min 6 caratteri)",
+    "passwordTempHint": "L'utente dovrebbe cambiarla dopo il primo accesso",
+    "role": "Ruolo",
+    "trialInfo": "Piano Trial: 10 visualizzazioni AI, 1 utente",
+    "loginSuccess": "Accesso riuscito",
+    "loginSuccessDesc": "Bentornato!",
+    "loginError": "Errore di accesso",
+    "loginErrorDesc": "Email o password sbagliata",
+    "registerSuccess": "Registrazione riuscita!",
+    "registerSuccessDesc": "Organizzazione creata",
+    "registerError": "Errore",
+    "logout": "Esci"
+  },
+  "roles": {
+    "ADMIN": "Amministratore",
+    "VODJA": "Manager",
+    "MONTER": "Installatore",
+    "SKLADISCE": "Magazzino"
+  },
+  "plans": {
+    "trial": "Trial",
+    "pro": "Pro",
+    "agency": "Agency"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "piano",
+    "stats": {
+      "projects": "Progetti",
+      "visualizations": "Visualizzazioni",
+      "team": "Squadra",
+      "materials": "Materiali"
+    },
+    "usage": {
+      "visualizations": "Utilizzo visualizzazioni",
+      "team": "Membri squadra",
+      "remaining": "Ancora {{count}} disponibili",
+      "maxReached": "Massimo raggiunto"
+    },
+    "recent": {
+      "projects": "Progetti recenti",
+      "visualizations": "Visualizzazioni recenti",
+      "noProjects": "Nessun progetto ancora",
+      "noViz": "Nessuna visualizzazione ancora"
+    },
+    "team": {
+      "title": "Squadra",
+      "addUser": "Aggiungi utente",
+      "removeConfirm": "Vuoi davvero rimuovere {{name}} dalla squadra?",
+      "removeSuccess": "Utente rimosso",
+      "removeSuccessDesc": "{{name}} non è più nella squadra"
+    }
+  },
+  "admin": {
+    "title": "Pannello admin",
+    "subtitle": "Inserisci password admin per accedere",
+    "password": "Password admin",
+    "unlock": "Sblocca pannello admin",
+    "demoPassword": "Password demo:",
+    "stats": {
+      "leads": "Lead totali",
+      "visualizations": "Visualizzazioni",
+      "success": "Tasso di successo",
+      "failed": "Fallite"
+    },
+    "tabs": {
+      "leads": "Lead",
+      "visualizations": "Visualizzazioni"
+    },
+    "noLeads": "Nessun lead. Visita la demo e invia un lead di test."
+  },
+  "footer": {
+    "slovenia": "Slovenia",
+    "rights": "Tutti i diritti riservati. Tecnologia AI: GLM-5.2 (Z.ai) + ControlNet."
+  },
+  "features": {
+    "fast": {
+      "title": "Fulmineo",
+      "desc": "30 secondi dall'immagine alla visualizzazione. L'installatore lavora sul posto, il cliente vede il risultato subito."
+    },
+    "professional": {
+      "title": "Professionale",
+      "desc": "Rendering fotorealistico con prospettiva originale. Il cliente vede il suo balcone, non un modello generico."
+    },
+    "sales": {
+      "title": "Dimostrato aumenta le vendite",
+      "desc": "Gli appaltatori riportano 30-50% tasso di conversione più alto con visualizzazioni. Il cliente vede, il cliente compra."
+    }
+  }
+}

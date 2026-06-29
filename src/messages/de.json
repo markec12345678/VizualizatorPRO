@@ -1,0 +1,248 @@
+{
+  "common": {
+    "appName": "VizualizatorPRO",
+    "tagline": "KI-Visualisierungen für Verkäufe",
+    "loading": "Laden...",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "close": "Schließen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "previous": "Zurück",
+    "search": "Suche",
+    "filter": "Filter",
+    "refresh": "Aktualisieren",
+    "download": "Herunterladen",
+    "upload": "Hochladen"
+  },
+  "nav": {
+    "home": "Startseite",
+    "dashboard": "Dashboard",
+    "projects": "Projekte",
+    "materials": "Materialien",
+    "team": "Team",
+    "settings": "Einstellungen",
+    "admin": "Admin",
+    "login": "Anmelden",
+    "logout": "Abmelden",
+    "register": "Registrieren"
+  },
+  "hero": {
+    "title": "Kunde sieht das Ergebnis.",
+    "subtitle": "Kauft sofort.",
+    "description": "Professionelles KI-Werkzeug für Balkongeländer- und Keramikunternehmer. Fotorealistische Visualisierungen vor Ort — von der Kamera Ihres Mobiltelefons. WPC, Edelstahl, Glas, alle Arten von Keramik.",
+    "conversionRate": "+47% Konversionsrate mit Visualisierungen",
+    "feature1": "Fotorealistisches Ergebnis in 30 Sekunden",
+    "feature2": "14 Materialien im Katalog",
+    "feature3": "Funktioniert auf dem Mobiltelefon"
+  },
+  "upload": {
+    "title": "Fotografieren oder Raum hochladen",
+    "subtitle": "Fotografieren Sie einen Balkon, Raum oder Fassade — KI zeigt das Ergebnis",
+    "imageLoaded": "Bild geladen",
+    "camera": "Fotografieren",
+    "gallery": "Aus Galerie hochladen",
+    "dragHere": "Bild hierher ziehen",
+    "orChoose": "oder wählen Sie eine Option unten",
+    "hint": "JPEG, PNG oder WebP · max 15MB · automatische Komprimierung",
+    "ready": "Bild bereit für KI-Verarbeitung",
+    "change": "Bild ändern",
+    "processing": "Bild wird verarbeitet..."
+  },
+  "materials": {
+    "title": "Material auswählen",
+    "subtitle": "WPC-Geländer, Edelstahl, Glas und Keramik — alle mit technischen Spezifikationen",
+    "selected": "Material ausgewählt",
+    "categoryWPC": "Balkongeländer",
+    "categoryCeramic": "Keramik und Fliesen",
+    "categoryColor": "Farbkombinationen",
+    "categoryFacade": "Fassade",
+    "custom": "Meine",
+    "addCustom": "Eigenes Material hinzufügen",
+    "noCustom": "Sie haben noch keine eigenen Materialien.",
+    "pricePerSqm": "€/m²"
+  },
+  "visualize": {
+    "title": "Visualisierung generieren",
+    "subtitle": "KI wendet das ausgewählte Material auf Ihr Bild an",
+    "button": "KI-Visualisierung generieren",
+    "processing": "Generiere...",
+    "needImage": "Bild hochladen und Material auswählen",
+    "needMaterial": "Material aus Katalog auswählen",
+    "needImageOnly": "Raumbild hochladen"
+  },
+  "result": {
+    "title": "KI-Visualisierung",
+    "subtitle": "Nach Materialauswahl auf \"Visualisierung generieren\" klicken",
+    "withMaterial": "Ergebnis mit Material",
+    "download": "Herunterladen",
+    "reset": "Zurücksetzen",
+    "placeholder": "KI-Visualisierung wird hier angezeigt",
+    "processing": "KI verarbeitet das Bild...",
+    "processingHint": "Fotorealistische Visualisierung wird generiert",
+    "before": "VOR",
+    "after": "NACH",
+    "sliderHint": "← Ziehen zum Vergleichen vor / nach →",
+    "success": "Visualisierung fertig!",
+    "error": "Fehler beim Generieren"
+  },
+  "ar": {
+    "title": "Echtzeit AR-Visualisierung",
+    "subtitle": "Geländer auf Balkon durch Kamera zeigen — Kunde sieht es sofort",
+    "startCamera": "AR-Kamera starten",
+    "stopCamera": "Kamera stoppen",
+    "live": "LIVE",
+    "tapToAdd": "👆 Tippen zum Hinzufügen von Pfosten",
+    "undo": "Rückgängig",
+    "clear": "Löschen",
+    "capture": "Aufnahme",
+    "fullscreen": "Vollbild",
+    "profile": "Geländerprofil",
+    "points": "Punkte",
+    "snapshots": "AR-Aufnahmen Verlauf",
+    "howToTitle": "So verwenden Sie AR",
+    "howTo1": "AR-Kamera starten (erfordert HTTPS in Produktion)",
+    "howTo2": "Telefon auf Balkon richten",
+    "howTo3": "Geländerprofil auswählen (WPC, Inox, ALU...)",
+    "howTo4": "Auf Bildschirm tippen um Pfosten hinzuzufügen",
+    "howTo5": "Geländer wird in Echtzeit gerendert",
+    "howTo6": "Aufnahme machen und für Angebot speichern",
+    "errorCamera": "Ihr Browser unterstützt keinen Kamerazugriff",
+    "errorHttps": "HTTPS für Kamerazugriff erforderlich. Wird in Produktionsumgebung funktionieren."
+  },
+  "pdf": {
+    "title": "PDF-Angebot mit Visualisierung",
+    "subtitle": "Professionelles Angebot für Kunden mit Visualisierung und Preis generieren",
+    "needViz": "Zuerst Bild hochladen, Material auswählen und KI-Visualisierung generieren.",
+    "customerName": "Kundenname",
+    "customerAddress": "Kundenadresse",
+    "projectAddress": "Projektstandort",
+    "surfaceArea": "Fläche (m²)",
+    "notes": "Notizen",
+    "totalPrice": "Gesamtpreis:",
+    "download": "PDF-Angebot herunterladen",
+    "generating": "PDF wird generiert..."
+  },
+  "lead": {
+    "title": "Möchten Sie dieses Tool für Ihr Unternehmen?",
+    "subtitle": "Kontakt hinterlassen — wir haben eine Demo mit Ihrem Material vorbereitet",
+    "sendTitle": "Anfrage senden",
+    "name": "Vollständiger Name *",
+    "company": "Unternehmen",
+    "email": "Email *",
+    "phone": "Telefon",
+    "message": "Nachricht",
+    "messagePlaceholder": "Sie haben mich gefunden über... Ich interessiere mich für...",
+    "submit": "Anfrage senden",
+    "success": "Danke für Ihre Anfrage!",
+    "successDesc": "Wir haben Ihre Anfrage erhalten und werden Sie innerhalb von 24 Stunden kontaktieren.",
+    "error": "Anfrage kann nicht angenommen werden. Bitte rufen Sie uns an.",
+    "needName": "Fehlende Daten",
+    "needNameDesc": "Mindestens Name und Email eingeben."
+  },
+  "auth": {
+    "login": "Anmelden",
+    "register": "Unternehmensregistrierung",
+    "email": "Email",
+    "password": "Passwort",
+    "name": "Ihr Name",
+    "orgName": "Unternehmensname",
+    "orgSlug": "URL-Kennung",
+    "orgSlugHint": "Nur Kleinbuchstaben, Zahlen und Bindestriche",
+    "loginButton": "Anmelden",
+    "registerButton": "Konto erstellen",
+    "passwordMin": "Passwort (min 6 Zeichen)",
+    "passwordTemp": "Temporäres Passwort (min 6 Zeichen)",
+    "passwordTempHint": "Benutzer sollte es nach erster Anmeldung ändern",
+    "role": "Rolle",
+    "trialInfo": "Trial-Plan: 10 KI-Visualisierungen, 1 Benutzer",
+    "loginSuccess": "Anmeldung erfolgreich",
+    "loginSuccessDesc": "Willkommen zurück!",
+    "loginError": "Anmeldefehler",
+    "loginErrorDesc": "Falsche Email oder Passwort",
+    "registerSuccess": "Registrierung erfolgreich!",
+    "registerSuccessDesc": "Organisation erstellt",
+    "registerError": "Fehler",
+    "logout": "Abmelden"
+  },
+  "roles": {
+    "ADMIN": "Administrator",
+    "VODJA": "Manager",
+    "MONTER": "Monteur",
+    "SKLADISCE": "Lager"
+  },
+  "plans": {
+    "trial": "Trial",
+    "pro": "Pro",
+    "agency": "Agency"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Plan",
+    "stats": {
+      "projects": "Projekte",
+      "visualizations": "Visualisierungen",
+      "team": "Team",
+      "materials": "Materialien"
+    },
+    "usage": {
+      "visualizations": "Visualisierungs-Nutzung",
+      "team": "Teammitglieder",
+      "remaining": "Noch {{count}} verfügbar",
+      "maxReached": "Maximum erreicht"
+    },
+    "recent": {
+      "projects": "Aktuelle Projekte",
+      "visualizations": "Aktuelle Visualisierungen",
+      "noProjects": "Noch keine Projekte",
+      "noViz": "Noch keine Visualisierungen"
+    },
+    "team": {
+      "title": "Team",
+      "addUser": "Benutzer hinzufügen",
+      "removeConfirm": "Möchten Sie {{name}} wirklich aus dem Team entfernen?",
+      "removeSuccess": "Benutzer entfernt",
+      "removeSuccessDesc": "{{name}} ist nicht mehr im Team"
+    }
+  },
+  "admin": {
+    "title": "Admin-Panel",
+    "subtitle": "Admin-Passwort eingeben für Zugriff",
+    "password": "Admin-Passwort",
+    "unlock": "Admin-Panel entsperren",
+    "demoPassword": "Demo-Passwort:",
+    "stats": {
+      "leads": "Leads gesamt",
+      "visualizations": "Visualisierungen",
+      "success": "Erfolgsrate",
+      "failed": "Fehlgeschlagen"
+    },
+    "tabs": {
+      "leads": "Leads",
+      "visualizations": "Visualisierungen"
+    },
+    "noLeads": "Keine Leads. Demo besuchen und Test-Lead senden."
+  },
+  "footer": {
+    "slovenia": "Slowenien",
+    "rights": "Alle Rechte vorbehalten. KI-Technologie: GLM-5.2 (Z.ai) + ControlNet."
+  },
+  "features": {
+    "fast": {
+      "title": "Blitzschnell",
+      "desc": "30 Sekunden vom Bild zur Visualisierung. Monteur arbeitet vor Ort, Kunde sieht Ergebnis sofort."
+    },
+    "professional": {
+      "title": "Professionell",
+      "desc": "Fotorealistische Darstellung mit originaler Perspektive. Kunde sieht seinen Balkon, keine generische Vorlage."
+    },
+    "sales": {
+      "title": "Bewiesen steigert Verkäufe",
+      "desc": "Unternehmer berichten 30-50% höhere Konversionsrate mit Visualisierungen. Kunde sieht, Kunde kauft."
+    }
+  }
+}
