@@ -1,0 +1,20 @@
+---
+name: 📋 Config for Issue Templates
+about: Konfiguracija issue template-ov
+---
+
+## 📋 Možnosti za novo težavo
+
+Izberi ustrezno predlogo:
+
+- **🐛 Bug Report** — prijavi napako v aplikaciji
+- **✨ Feature Request** — predlagaj novo funkcionalnost
+- **📚 Documentation** — poveži ali popravi dokumentacijo
+- **🔒 Security Issue** — glej SECURITY.md (NE odpri javnega issue-ja!)
+
+## ⚠️ Pred odprtjem issue-ja
+
+1. Preveri [obstoječe issue-je](https://github.com/markec12345678/VizualizatorPRO/issues) — morda je že odprt
+2. Preveri [dokumentacijo](https://github.com/markec12345678/VizualizatorPRO#readme)
+3. Poskusi z najnovejšo verzijo (`git pull && bun install`)
+4. Pripravi screenshot / log / korake za reproduciranje
