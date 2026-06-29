@@ -430,7 +430,13 @@ export default function Home() {
             />
           </div>
 
+          {/* DASHBOARD ZA PRIJAVLJENE UPORABNIKE */}
           <div className="mt-16">
+            <Dashboard />
+          </div>
+
+          {/* ADMIN PANEL */}
+          <div className="mt-8">
             <AdminPanel />
           </div>
         </div>

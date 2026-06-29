@@ -126,6 +126,34 @@ Izvajalci balkonskih ograd in keramike izgubljajo posle ker stranke **ne morejo 
 - SessionProvider za client-side auth state
 - AuthDialog komponenta z login/register tab-oma
 
+### 📊 Nadzorna plošča (Dashboard)
+- Pregled statistik za prijavljene uporabnike
+- 4 glavne metrike: projekti, vizualizacije, ekipa, materiali
+- Sub-statistike: novi leadi in vizualizacije v zadnjih 30 dneh
+- Uporabniški progress bars z opozorili pri 80% in 100% porabi
+- Zadnji projekti (5) z številom vizualizacij
+- Zadnje vizualizacije (5) z statusom (completed/failed)
+- API endpoint `/api/dashboard` z vsemi podatki organizacije
+
+### 👥 Team Management
+- Admin lahko doda nove uporabnike v organizacijo
+- Dodelitev vlog (ADMIN, VODJA, MONTER, SKLADISCE)
+- Začasna gesla (bcrypt hash, 12 rounds)
+- Preverjanje omejitev paketa (max uporabnikov)
+- Odstranjevanje uporabnikov iz ekipe
+- API endpoint `/api/organization/invite` (POST, DELETE)
+- Dialog z validacijo in prijaznimi napakami
+- Prikaz ekipe z vlogami in ikonami (Crown za admin)
+
+### 📱 Mobilna aplikacija (Capacitor)
+- Konfiguracija v `capacitor.config.ts`
+- Podpora za Android in iOS
+- Native plugins: Camera, Geolocation, LocalNotifications, PushNotifications, StatusBar, SplashScreen
+- Standalone Next.js output (pripravljen za Capacitor)
+- App ID: `si.vizualizatorpro.app`
+- Antracit tema z amber akcentom
+- Celovita navodila v `MOBILE.md`
+
 ---
 
 ## 🛠️ Tehnološki sklad
@@ -402,9 +430,12 @@ bun run start
 - [x] **Custom material upload** (firme dodajajo svoje materiale)
 - [x] **AR mode** (real-time vizualizacija skozi kamero z MediaDevices)
 - [x] **Multi-tenant** arhitektura (NextAuth + 4 vloge + organizacije)
+- [x] **Dashboard** za prijavljene uporabnike (statistike, poraba)
+- [x] **Team Management** (admin doda/odstrani uporabnike)
+- [x] **Mobilna aplikacija** (Capacitor konfiguracija + navodila)
 - [ ] **Stripe integracija** za mesečne naročnine
-- [ ] **Mobilna aplikacija** (React Native ali Capacitor)
 - [ ] **WebXR AR** za bolj napredno vizualizacijo z globino
+- [ ] **App Store / Google Play** deploy (po Capacitor build-u)
 
 ---
 
