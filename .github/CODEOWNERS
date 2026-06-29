@@ -1,0 +1,93 @@
+# CODEOWNERS za VizualizatorPRO
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#
+# Lastniki kode so samodejno dodani kot reviewerji na PR-je, ki spreminjajo njihovo kodo.
+
+# ============================================
+# GLOBALNI LASTNIKI (za vse datoteke)
+# ============================================
+*                       @markec12345678
+
+# ============================================
+# ARHITEKTURA - glavni vzdrževalec
+# ============================================
+# Next.js aplikacija
+/src/app/               @markec12345678
+/src/lib/               @markec12345678
+/src/hooks/             @markec12345678
+
+# Komponente
+/src/components/        @markec12345678
+
+# API routes
+/src/app/api/           @markec12345678
+
+# ============================================
+# BAZA PODATKOV
+# ============================================
+/prisma/                @markec12345678
+
+# ============================================
+# INFRASTRUKTURA
+# ============================================
+# CI/CD in GitHub konfiguracija
+/.github/               @markec12345678
+
+# Docker
+/Dockerfile             @markec12345678
+/docker-compose.yml     @markec12345678
+/.dockerignore          @markec12345678
+/Caddyfile              @markec12345678
+
+# Deploy konfiguracija
+/next.config.ts         @markec12345678
+/capacitor.config.ts    @markec12345678
+
+# ============================================
+# DOKUMENTACIJA
+# ============================================
+/README.md              @markec12345678
+/CONTRIBUTING.md        @markec12345678
+/CHANGELOG.md           @markec12345678
+/SECURITY.md            @markec12345678
+/CODE_OF_CONDUCT.md     @markec12345678
+/MOBILE.md              @markec12345678
+/docs/                  @markec12345678
+
+# ============================================
+# VARNOST - zahtevajo dodatno pozornost
+# ============================================
+/src/lib/auth/          @markec12345678
+/src/app/api/auth/      @markec12345678
+/src/app/api/organization/ @markec12345678
+/.env.example           @markec12345678
+/SECURITY.md            @markec12345678
+
+# ============================================
+# KONFIGURACIJA PROJEKTA
+# ============================================
+/package.json           @markec12345678
+/bun.lock               @markec12345678
+/tsconfig.json          @markec12345678
+/eslint.config.mjs      @markec12345678
+/tailwind.config.ts     @markec12345678
+/postcss.config.mjs     @markec12345678
+/components.json        @markec12345678
+
+# ============================================
+# AI / VIZUALIZACIJA - ključna funkcionalnost
+# ============================================
+/src/lib/catalog.ts     @markec12345678
+/src/lib/email.ts       @markec12345678
+/src/app/api/visualize/ @markec12345678
+
+# ============================================
+# STATIČNI RESURSI
+# ============================================
+/public/                @markec12345678
+/scripts/               @markec12345678
+
+# ============================================
+# LICENCA
+# ============================================
+/LICENSE                @markec12345678

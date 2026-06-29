@@ -1,0 +1,88 @@
+# 🕐 Stale - avtomatsko zapiranje nedejavnih issue-jev in PR-jev
+# https://github.com/actions/stale
+
+name: 🕐 Mark Stale Issues & PRs
+
+on:
+  schedule:
+    # Vsak dan ob 03:00 UTC
+    - cron: '0 3 * * *'
+  workflow_dispatch: # Ročni zagon
+
+permissions:
+  issues: write
+  pull-requests: write
+  contents: read
+
+jobs:
+  stale:
+    name: 🕐 Check for stale items
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🕐 Mark stale
+        uses: actions/stale@v9
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          
+          # === ISSUEJI ===
+          # Označi kot stale po 60 dneh nedejavnosti
+          days-before-issue-stale: 60
+          # Zapri po dodatnih 14 dneh (skupaj 74 dni)
+          days-before-issue-close: 14
+          # Ne označi kot stale če ima te labele
+          exempt-issue-labels: 'pinned,security,enhancement,bug,help wanted,roadmap,in-progress,awaiting-feedback'
+          # Labela za stale
+          stale-issue-label: 'stale'
+          # Labela pred zaprtjem
+          close-issue-label: 'wontfix'
+          # Število operacij na zagon (da ne preobremo API-ja)
+          operations-per-run: 30
+          
+          # Sporočilo ob označitvi kot stale
+          stale-issue-message: |
+            🕐 Ta issue je nedejaven 60 dni in je bil označen kot **stale**.
+            
+            Če je še vedno relevanten, komentiraj ali odstrani labelo `stale`.
+            V nasprotnem primeru bo samodejno zaprt čez 14 dni.
+            
+            Hvala za tvoje prispevke! 🙏
+          
+          # Sporočilo ob zaprtju
+          close-issue-message: |
+            🔒 Ta issue je bil samodejno zaprt zaradi nedejavnosti.
+            
+            Če je še vedno relevanten, ga ponovno odpri ali ustvari novega.
+            
+            Hvala! 🙏
+          
+          # === PULL REQUESTI ===
+          # Označi kot stale po 30 dneh (krajši čas za PR-je)
+          days-before-pr-stale: 30
+          # Zapri po dodatnih 14 dneh
+          days-before-pr-close: 14
+          # Ne označi kot stale če ima te labele
+          exempt-pr-labels: 'pinned,security,dependencies,automated,wip,do-not-merge'
+          # Labela za stale PR
+          stale-pr-label: 'stale'
+          # Labela pred zaprtjem
+          close-pr-label: 'wontfix'
+          
+          # Sporočilo ob označitvi PR kot stale
+          stale-pr-message: |
+            🕐 Ta PR je nedejaven 30 dni in je bil označen kot **stale**.
+            
+            Če še vedno delaš na njem, komentiraj ali odstrani labelo `stale`.
+            V nasprotnem primeru bo samodejno zaprt čez 14 dni.
+            
+            Hvala za tvoje prispevke! 🙏
+          
+          # Sporočilo ob zaprtju PR
+          close-pr-message: |
+            🔒 Ta PR je bil samodejno zaprt zaradi nedejavnosti.
+            
+            Če želiš nadaljevati delo, ga ponovno odpri ali ustvari novega.
+            
+            Hvala! 🙏
+          
+          # Vedno označi vse kot stale (tudi tiste z assignees)
+          enable-statistics: true

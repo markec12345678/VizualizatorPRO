@@ -5,6 +5,8 @@
 > Stranka vidi rezultat. Kupi takoj.
 
 [![CI/CD](https://github.com/markec12345678/VizualizatorPRO/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/markec12345678/VizualizatorPRO/actions/workflows/ci-cd.yml)
+[![Stale](https://github.com/markec12345678/VizualizatorPRO/actions/workflows/stale.yml/badge.svg)](https://github.com/markec12345678/VizualizatorPRO/actions/workflows/stale.yml)
+[![Label Sync](https://github.com/markec12345678/VizualizatorPRO/actions/workflows/labels.yml/badge.svg)](https://github.com/markec12345678/VizualizatorPRO/actions/workflows/labels.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
 [![Version: 1.3.0](https://img.shields.io/badge/version-1.3.0-blue.svg)](./CHANGELOG.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
@@ -19,15 +21,21 @@
 [![NextAuth](https://img.shields.io/badge/NextAuth-v4-red?logo=auth0)](https://next-auth.js.org/)
 [![PWA](https://img.shields.io/badge/PWA-ready-5A0FC8?logo=pwa)](https://web.dev/progressive-web-apps/)
 [![Docker](https://img.shields.io/badge/Docker-ready-2496ED?logo=docker)](./Dockerfile)
+[![Capacitor](https://img.shields.io/badge/Capacitor-ready-119EFF?logo=capacitor)](./capacitor.config.ts)
 [![AI: GLM-5.2](https://img.shields.io/badge/AI-GLM--5.2-orange)](https://z.ai)
 
 [![GitHub stars](https://img.shields.io/github/stars/markec12345678/VizualizatorPRO?style=social)](https://github.com/markec12345678/VizualizatorPRO/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/markec12345678/VizualizatorPRO?style=social)](https://github.com/markec12345678/VizualizatorPRO/network/members)
 [![GitHub issues](https://img.shields.io/github/issues/markec12345678/VizualizatorPRO)](https://github.com/markec12345678/VizualizatorPRO/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/markec12345678/VizualizatorPRO)](https://github.com/markec12345678/VizualizatorPRO/pulls)
+[![GitHub contributors](https://img.shields.io/github/contributors/markec12345678/VizualizatorPRO)](https://github.com/markec12345678/VizualizatorPRO/graphs/contributors)
 [![GitHub last commit](https://img.shields.io/github/last-commit/markec12345678/VizualizatorPRO)](https://github.com/markec12345678/VizualizatorPRO/commits)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/markec12345678/VizualizatorPRO)](https://github.com/markec12345678/VizualizatorPRO/commits)
 [![GitHub repo size](https://img.shields.io/github/repo-size/markec12345678/VizualizatorPRO)](https://github.com/markec12345678/VizualizatorPRO)
+[![GitHub language count](https://img.shields.io/github/languages/count/markec12345678/VizualizatorPRO)](https://github.com/markec12345678/VizualizatorPRO)
 [![Slovenia](https://img.shields.io/badge/made%20in-Slovenia-red?logo=slovenia)](https://sl.wikipedia.org/wiki/Slovenia)
+
+**🌐 Spletna stran:** [vizualizatorpro.si](https://vizualizatorpro.si) · **💬 Discussions:** [GitHub Discussions](https://github.com/markec12345678/VizualizatorPRO/discussions) · **📋 Project Board:** [GitHub Projects](https://github.com/markec12345678/VizualizatorPRO/projects)
 
 ---
 
@@ -47,6 +55,7 @@
 - [Tržni potencial](#-tržni-potencial)
 - [Konkurenca](#-konkurenca)
 - [Roadmap](#️-roadmap)
+- [Dokumentacija](#-dokumentacija)
 - [Prispevanje](#-prispevanje)
 - [Varnost](#-varnost)
 - [Licenca](#-licenca)
@@ -616,6 +625,43 @@ curl -X POST https://vizualizatorpro.si/api/auth/register \
 - [ ] **Stripe integracija** za mesečne naročnine
 - [ ] **WebXR AR** za bolj napredno vizualizacijo z globino
 - [ ] **App Store / Google Play** deploy (po Capacitor build-u)
+
+---
+
+## 📚 Dokumentacija
+
+### 📖 Glavna dokumentacija
+
+| Dokument | Opis |
+|----------|------|
+| [📖 README.md](./README.md) | Glavna dokumentacija (ta datoteka) |
+| [🏗️ docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) | Detajlna tehnična arhitektura sistema |
+| [📱 MOBILE.md](./MOBILE.md) | Navodila za mobilno aplikacijo (Capacitor) |
+| [📋 CHANGELOG.md](./CHANGELOG.md) | Zgodovina vseh verzij |
+| [🤝 CONTRIBUTING.md](./CONTRIBUTING.md) | Smernice za prispevanje |
+| [📜 CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) | Kodeks obnašanja |
+| [🔒 SECURITY.md](./SECURITY.md) | Politika varnosti |
+| [⚖️ LICENSE](./LICENSE) | MIT licenca |
+
+### 🛠️ Konfiguracijske datoteke
+
+| Datoteka | Opis |
+|----------|------|
+| [🐳 Dockerfile](./Dockerfile) | Multi-stage Docker build |
+| [🐳 docker-compose.yml](./docker-compose.yml) | Docker Compose konfiguracija |
+| [🌐 Caddyfile](./Caddyfile) | Reverse proxy z HTTPS |
+| [📱 capacitor.config.ts](./capacitor.config.ts) | Mobilna aplikacija konfiguracija |
+| [⚙️ next.config.ts](./next.config.ts) | Next.js konfiguracija |
+| [🗄️ prisma/schema.prisma](./prisma/schema.prisma) | Database schema |
+| [📦 package.json](./package.json) | Odvisnosti in skripte |
+
+### 🔄 GitHub Actions
+
+| Workflow | Opis |
+|----------|------|
+| [ci-cd.yml](./.github/workflows/ci-cd.yml) | CI/CD: lint, build, security, release, Docker, Vercel |
+| [stale.yml](./.github/workflows/stale.yml) | Avtomatsko zapiranje nedejavnih issue-jev |
+| [labels.yml](./.github/workflows/labels.yml) | Sinhronizacija standardiziranih label |
 
 ---
 

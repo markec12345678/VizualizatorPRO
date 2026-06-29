@@ -1,0 +1,35 @@
+# 🏷️ Label Sync - sinhronizacija standardiziranih label
+# https://github.com/marketplace/actions/github-labeler
+
+name: 🏷️ Sync Labels
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/labels.yml'
+  workflow_dispatch: # Ročni zagon
+  schedule:
+    # Vsak ponedeljek ob 04:00 UTC
+    - cron: '0 4 * * 1'
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  sync-labels:
+    name: 🏷️ Sync GitHub Labels
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v7
+
+      - name: 🏷️ Sync labels
+        uses: crazy-max/ghaction-github-labeler@v5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          yaml-file: .github/labels.yml
+          skip-delete: false
+          dry-run: false

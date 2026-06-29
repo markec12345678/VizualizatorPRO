@@ -1,0 +1,183 @@
+# Standardizirane GitHub labele za VizualizatorPRO
+# https://github.com/crazy-max/ghaction-github-labeler
+
+# ============================================
+# TIP (modra)
+# ============================================
+- name: '🚀 feature'
+  color: '0E8A16'
+  description: 'Nova funkcionalnost'
+
+- name: '🐛 bug'
+  color: 'B60205'
+  description: 'Napaka, ki jo je treba popraviti'
+
+- name: '🔧 chore'
+  color: 'FBCA04'
+  description: 'Vzdrževalna naloga'
+
+- name: '♻️ refactor'
+  color: '1D76DB'
+  description: 'Refaktoriranje kode'
+
+- name: '⚡ performance'
+  color: 'FBCA04'
+  description: 'Izboljšava performans'
+
+- name: '🎨 design'
+  color: 'C2E0C6'
+  description: 'UI/UX spremembe'
+
+- name: '📚 documentation'
+  color: '0075CA'
+  description: 'Izboljšave dokumentacije'
+
+- name: '🧪 test'
+  color: '0E8A16'
+  description: 'Dodajanje ali popravljanje testov'
+
+# ============================================
+# PREDNOST (rdeča/oranžna/rumena/zelena)
+# ============================================
+- name: '🔴 critical'
+  color: 'B60205'
+  description: 'Kritična prioriteta - takoj'
+
+- name: '🟠 high'
+  color: 'D93F0B'
+  description: 'Visoka prioriteta'
+
+- name: '🟡 medium'
+  color: 'FBCA04'
+  description: 'Srednja prioriteta'
+
+- name: '🟢 low'
+  color: '0E8A16'
+  description: 'Nizka prioriteta'
+
+# ============================================
+# STATUS (vijolična)
+# ============================================
+- name: '✅ ready'
+  color: '0E8A16'
+  description: 'Pripravljeno za delo'
+
+- name: '🔄 in-progress'
+  color: '1D76DB'
+  description: 'Trenutno v delu'
+
+- name: '👀 review'
+  color: '5319E7'
+  description: 'Čaka na code review'
+
+- name: '⛔ blocked'
+  color: 'B60205'
+  description: 'Blokirano - čaka na odvisnost'
+
+- name: '🕐 stale'
+  color: 'FBCA04'
+  description: 'Nedejaven dalj časa'
+
+- name: '🔒 wontfix'
+  color: 'B60205'
+  description: 'Ne bo popravljeno'
+
+# ============================================
+# TEMA (zelena)
+# ============================================
+- name: '🎨 ui'
+  color: 'C2E0C6'
+  description: 'Spremembe uporabniškega vmesnika'
+
+- name: '🤖 ai'
+  color: '5319E7'
+  description: 'AI/ML funkcionalnost'
+
+- name: '🔐 auth'
+  color: 'B60205'
+  description: 'Avtentikacija in avtorizacija'
+
+- name: '🗄️ database'
+  color: '1D76DB'
+  description: 'Spremembe baze podatkov'
+
+- name: '🐳 docker'
+  color: '0E8A16'
+  description: 'Docker/infrastruktura'
+
+- name: '📱 mobile'
+  color: '5319E7'
+  description: 'Mobilna aplikacija (Capacitor)'
+
+- name: '🌐 api'
+  color: '1D76DB'
+  description: 'API spremembe'
+
+- name: '🛡️ security'
+  color: 'B60205'
+  description: 'Varnostne popravke'
+
+# ============================================
+# TEŽAVNOST (modra)
+# ============================================
+- name: '🌱 good first issue'
+  color: '7057FF'
+  description: 'Dobro za novince v projektu'
+
+- name: '🆘 help wanted'
+  color: '008672'
+  description: 'Potrebna pomoč skupnosti'
+
+# ============================================
+# AVTOMATIZACIJA (siva)
+# ============================================
+- name: '🤖 automated'
+  color: '6E6E6E'
+  description: 'Samodejno ustvarjeno (Dependabot, etc.)'
+
+- name: '📦 dependencies'
+  color: '0366D6'
+  description: 'Posodobitve odvisnosti'
+
+- name: '🔖 release'
+  color: '008672'
+  description: 'Povezano z izdajo'
+
+- name: '📌 pinned'
+  color: 'B60205'
+  description: 'Pripeto - ne bo zaprto'
+
+- name: '🚧 wip'
+  color: 'FBCA04'
+  description: 'Work in progress'
+
+- name: '🚫 do-not-merge'
+  color: 'B60205'
+  description: 'Ne zlivaj!'
+
+# ============================================
+# TRIAŽA (bela)
+# ============================================
+- name: 'triage'
+  color: 'FFFFFF'
+  description: 'Potrebuje triažo'
+
+- name: 'duplicate'
+  color: 'C5DEF5'
+  description: 'Duplikat drugega issue-ja'
+
+- name: 'invalid'
+  color: 'E4E669'
+  description: 'Neveljaven'
+
+- name: 'question'
+  color: 'D876E3'
+  description: 'Vprašanje ali razprava'
+
+- name: 'roadmap'
+  color: '3E4B9E'
+  description: 'Na roadmapu za prihodnost'
+
+- name: 'awaiting-feedback'
+  color: 'FBCA04'
+  description: 'Čaka na povratno informacijo'
