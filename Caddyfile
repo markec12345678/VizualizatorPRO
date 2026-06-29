@@ -1,23 +1,79 @@
-:81 {
-	@transform_port_query {
-		query XTransformPort=*
-	}
+# VizualizatorPRO - production Caddyfile
+# 
+# Caddy avtomatsko pridobi in obnavlja Let's Encrypt SSL certifikate.
+# 
+# Uporaba:
+#   1. Spremeni vizualizatorpro.si v svojo domeno
+#   2. Ustvari A record v DNS, ki kaže na tvoj server
+#   3. docker-compose --profile production up -d
 
-	handle @transform_port_query {
-		reverse_proxy localhost:{query.XTransformPort} {
-			header_up Host {host}
-			header_up X-Forwarded-For {remote_host}
-			header_up X-Forwarded-Proto {scheme}
-			header_up X-Real-IP {remote_host}
-		}
-	}
+vizualizatorpro.si {
+    # Reverse proxy na Next.js aplikacijo
+    reverse_proxy app:3000
+    
+    # Compression
+    encode gzip zstd
+    
+    # Security headers
+    header {
+        # Strict Transport Security (HTTPS only)
+        Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+        
+        # X-Frame-Options (prepreči clickjacking)
+        X-Frame-Options "DENY"
+        
+        # X-Content-Type-Options (prepreči MIME sniffing)
+        X-Content-Type-Options "nosniff"
+        
+        # Referrer-Policy
+        Referrer-Policy "strict-origin-when-cross-origin"
+        
+        # Permissions-Policy (omeji dostop do API-jev)
+        Permissions-Policy "camera=(self), geolocation=(self), microphone=()"
+        
+        # Content Security Policy
+        Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https:; frame-ancestors 'none';"
+        
+        # X-XSS-Protection (za starejše brskalnike)
+        X-XSS-Protection "1; mode=block"
+        
+        # Remove Server header
+        -Server
+    }
+    
+    # Rate limiting (opcijsko - potrebuj caddy-ratelimit plugin)
+    # rate_limit {
+    #     zone /api 100r/m
+    #     zone /api/auth 5r/15m
+    # }
+    
+    # Logging
+    log {
+        output file /data/access.log {
+            roll_size 100mb
+            roll_keep 10
+            roll_keep_for 720h
+        }
+        format json
+    }
+    
+    # Gzip kompresija za statične datoteke
+    @static {
+        path *.js *.css *.png *.jpg *.jpeg *.svg *.woff *.woff2
+    }
+    header @static Cache-Control "public, max-age=31536000, immutable"
+    
+    # Health check endpoint
+    @healthcheck path /api
+    respond @healthcheck 200
+}
 
-	handle {
-		reverse_proxy localhost:3000 {
-			header_up Host {host}
-			header_up X-Forwarded-For {remote_host}
-			header_up X-Forwarded-Proto {scheme}
-			header_up X-Real-IP {remote_host}
-		}
-	}
+# WWW redirect na non-WWW
+www.vizualizatorpro.si {
+    redir https://vizualizatorpro.si{uri} permanent
+}
+
+# HTTP redirect na HTTPS
+http://vizualizatorpro.si, http://www.vizualizatorpro.si {
+    redir https://vizualizatorpro.si{uri} permanent
 }

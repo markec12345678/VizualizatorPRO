@@ -1,0 +1,86 @@
+# VizualizatorPRO - .dockerignore
+# Zmanjša build context in pospeši Docker build
+
+# Odvisnosti
+node_modules
+.pnp
+.pnp.js
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Build output
+.next/
+out/
+build/
+dist/
+
+# Environment
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+*.env
+
+# Database
+db/*.db
+db/*.db-journal
+db/*.sqlite
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dev.log
+server.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+.gitattributes
+.github/
+
+# Testiranje
+coverage/
+.nyc_output/
+
+# Cache
+.cache/
+.parcel-cache/
+.eslintcache
+.turbo
+
+# Temp
+*.tmp
+*.bak
+
+# Sandbox specifično
+.zscripts/
+research/
+download/
+upload/
+skills/
+mini-services/
+examples/
+
+# Dokumentacija (ni potrebna v Docker sliki)
+docs/
+*.md
+!README.md
+LICENSE

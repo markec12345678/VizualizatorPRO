@@ -1,0 +1,74 @@
+# Dependabot konfiguracija za VizualizatorPRO
+# Avtomatsko posodablja odvisnosti in GitHub Actions
+
+version: 2
+
+updates:
+  # npm/Bun odvisnosti
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "Europe/Ljubljana"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "automated"
+    assignees:
+      - "markec12345678"
+    commit-message:
+      prefix: "chore(deps)"
+      include: "scope"
+    groups:
+      # Združi minor/patch posodobitve
+      minor-and-patch:
+        update-types:
+          - "minor"
+          - "patch"
+      # Ločena skupina za major posodobitve (breaking changes)
+      major:
+        update-types:
+          - "major"
+    # Ignoriraj določene pakete
+    ignore:
+      # Next.js major verzije zahtevajo ročno posodobitev
+      - dependency-name: "next"
+        update-types: ["version-update:semver-major"]
+      # React major verzije zahtevajo ročno posodobitev
+      - dependency-name: "react"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react-dom"
+        update-types: ["version-update:semver-major"]
+      # Prisma major verzije zahtevajo migracijo
+      - dependency-name: "prisma"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@prisma/client"
+        update-types: ["version-update:semver-major"]
+
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "github-actions"
+      - "automated"
+    commit-message:
+      prefix: "chore(ci)"
+      include: "scope"
+
+  # Docker base image
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 3
+    labels:
+      - "dependencies"
+      - "docker"
+      - "automated"

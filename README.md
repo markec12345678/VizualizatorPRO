@@ -4,14 +4,70 @@
 
 > Stranka vidi rezultat. Kupi takoj.
 
+[![CI/CD](https://github.com/markec12345678/VizualizatorPRO/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/markec12345678/VizualizatorPRO/actions/workflows/ci-cd.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![Version: 1.3.0](https://img.shields.io/badge/version-1.3.0-blue.svg)](./CHANGELOG.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
+[![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./CODE_OF_CONDUCT.md)
+[![Security](https://img.shields.io/badge/security-responsible%20disclosure-blue.svg)](./SECURITY.md)
+
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Prisma](https://img.shields.io/badge/Prisma-6-2D3748?logo=prisma)](https://www.prisma.io/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38BDF8?logo=tailwind-css)](https://tailwindcss.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-New%20York-black)](https://ui.shadcn.com/)
+[![NextAuth](https://img.shields.io/badge/NextAuth-v4-red?logo=auth0)](https://next-auth.js.org/)
+[![PWA](https://img.shields.io/badge/PWA-ready-5A0FC8?logo=pwa)](https://web.dev/progressive-web-apps/)
+[![Docker](https://img.shields.io/badge/Docker-ready-2496ED?logo=docker)](./Dockerfile)
 [![AI: GLM-5.2](https://img.shields.io/badge/AI-GLM--5.2-orange)](https://z.ai)
 
+[![GitHub stars](https://img.shields.io/github/stars/markec12345678/VizualizatorPRO?style=social)](https://github.com/markec12345678/VizualizatorPRO/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/markec12345678/VizualizatorPRO?style=social)](https://github.com/markec12345678/VizualizatorPRO/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/markec12345678/VizualizatorPRO)](https://github.com/markec12345678/VizualizatorPRO/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/markec12345678/VizualizatorPRO)](https://github.com/markec12345678/VizualizatorPRO/pulls)
+[![GitHub last commit](https://img.shields.io/github/last-commit/markec12345678/VizualizatorPRO)](https://github.com/markec12345678/VizualizatorPRO/commits)
+[![GitHub repo size](https://img.shields.io/github/repo-size/markec12345678/VizualizatorPRO)](https://github.com/markec12345678/VizualizatorPRO)
+[![Slovenia](https://img.shields.io/badge/made%20in-Slovenia-red?logo=slovenia)](https://sl.wikipedia.org/wiki/Slovenia)
+
+---
+
+## 📖 Kazalo
+
+- [Pregled](#-pregled)
+- [Poslovni problem](#-poslovni-problem)
+- [Ključne funkcionalnosti](#-ključne-funkcionalnosti)
+- [Tehnološki sklad](#️-tehnološki-sklad)
+- [Arhitektura](#-arhitektura)
+- [Hitri začetek](#-hitri-zacetek)
+- [Namestitev](#-namestitev)
+- [Okoljske spremenljivke](#-okoljske-spremenljivke)
+- [Docker namestitev](#-docker-namestitev)
+- [Mobilna aplikacija](#-mobilna-aplikacija)
+- [API dokumentacija](#-api-dokumentacija)
+- [Tržni potencial](#-tržni-potencial)
+- [Konkurenca](#-konkurenca)
+- [Roadmap](#️-roadmap)
+- [Prispevanje](#-prispevanje)
+- [Varnost](#-varnost)
+- [Licenca](#-licenca)
+- [Kontakt](#-kontakt)
+
+---
+
+## 🎯 Pregled
+
 Aplikacija za izvajalce gradbenih storitev, ki na kraju samem stranki pokaže fotorealističen prikaz končnega rezultata — z novo ograjo ali keramiko. Preprosto: fotografiraš balkon, izbereš material, AI generira vizualizacijo v 30 sekundah, stranka vidi "svoj balkon" z novo ograjo — in podpiše pogodbo.
+
+### 🌟 Glavne prednosti
+
+- 📸 **AI vizualizacije** v 30 sekundah z Replicate ControlNet
+- 📷 **AR način** - real-time prikaz ograd skozi kamero
+- 📱 **PWA** - deluje offline, namestitev na telefon
+- 📄 **PDF ponudbe** z vizualizacijo in ceno
+- 🔐 **Multi-tenant SaaS** - vsaka firma svoj račun
+- 🇸🇮 **Slovenščina** + lokalne cene (€/m²)
+- 🐳 **Docker** pripravljen za self-hosting
+- 📱 **Capacitor** pripravljen za Android in iOS
 
 ---
 
@@ -364,11 +420,135 @@ git push origin main
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/markec12345678/VizualizatorPRO)
 
-### Samostojno
+### 🐳 Docker namestitev
+
+#### Hitri začetek z Docker Compose
+
+```bash
+# 1. Kloniraj repo
+git clone https://github.com/markec12345678/VizualizatorPRO.git
+cd VizualizatorPRO
+
+# 2. Pripravi .env
+cp .env.example .env
+# Izpolni API ključe
+
+# 3. Zaženi z Docker Compose
+docker-compose up -d
+
+# 4. Aplikacija je dostopna na http://localhost:3000
+```
+
+#### Produkcijska namestitev s HTTPS (Caddy)
+
+```bash
+# 1. Spremeni domeno v Caddyfile (vizualizatorpro.si -> tvoja.si)
+# 2. Nastavi DNS A record na svoj server
+# 3. Zaženi s production profilom
+docker-compose --profile production up -d
+
+# Caddy avtomatsko pridobi Let's Encrypt SSL certifikat
+```
+
+#### Samostojni Docker build
+
+```bash
+# Build slike
+docker build -t vizualizatorpro:latest .
+
+# Zaženi container
+docker run -d \
+  --name vizualizatorpro \
+  -p 3000:3000 \
+  -v vizualizatorpro_db:/app/db \
+  -v vizualizatorpro_uploads:/app/public/uploads \
+  -e NEXTAUTH_SECRET=$(openssl rand -base64 32) \
+  -e NEXTAUTH_URL=https://tvoja.si \
+  -e REPLICATE_API_TOKEN=your_token \
+  -e RESEND_API_KEY=your_key \
+  vizualizatorpro:latest
+```
+
+#### GitHub Container Registry
+
+```bash
+# Pull iz GHCR
+docker pull ghcr.io/markec12345678/vizualizatorpro:latest
+
+# Zaženi
+docker run -d -p 3000:3000 ghcr.io/markec12345678/vizualizatorpro:latest
+```
+
+### Samostojno (brez Dockerja)
 
 ```bash
 bun run build
 bun run start
+```
+
+---
+
+## 📡 API dokumentacija
+
+### Avtentikacija
+
+Vsi API endpointi (razen `/api/lead` in javnih) zahtevajo veljaven NextAuth session.
+
+| Endpoint | Metoda | Avtentikacija | Opis |
+|----------|--------|---------------|------|
+| `/api/visualize` | POST | ✅ (custom materiali) | AI vizualizacija s ControlNet |
+| `/api/visualize` | GET | - | Statistike vizualizacij |
+| `/api/lead` | POST | - | Submit lead forma |
+| `/api/lead` | GET | ✅ Admin | Pregled vseh leadov |
+| `/api/materials` | GET | - | Statični katalog materialov |
+| `/api/materials/custom` | GET | - | Custom materiali |
+| `/api/materials/custom` | POST | ✅ | Dodaj custom material |
+| `/api/auth/[...nextauth]` | GET/POST | - | NextAuth handler |
+| `/api/auth/register` | POST | - | Registracija nove firme |
+| `/api/dashboard` | GET | ✅ | Statistike organizacije |
+| `/api/organization/invite` | POST | ✅ Admin | Dodaj uporabnika |
+| `/api/organization/invite` | DELETE | ✅ Admin | Odstrani uporabnika |
+
+### Primeri
+
+#### AI vizualizacija
+
+```bash
+curl -X POST https://vizualizatorpro.si/api/visualize \
+  -H "Content-Type: application/json" \
+  -d '{
+    "originalImage": "data:image/jpeg;base64,...",
+    "materialId": "wpc-h-line"
+  }'
+```
+
+#### Lead submission
+
+```bash
+curl -X POST https://vizualizatorpro.si/api/lead \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Janez Novak",
+    "email": "janez@firma.si",
+    "phone": "+386 41 234 567",
+    "company": "Moja firma d.o.o.",
+    "materialInterest": "WPC H-Line Vodoravno",
+    "notes": "Zanima me 10m balkon"
+  }'
+```
+
+#### Registracija firme
+
+```bash
+curl -X POST https://vizualizatorpro.si/api/auth/register \
+  -H "Content-Type: application/json" \
+  -d '{
+    "organizationName": "Roksal d.o.o. Kranj",
+    "slug": "roksal",
+    "email": "admin@roksal.si",
+    "password": "močno-geslo-123",
+    "name": "Marko Marković"
+  }'
 ```
 
 ---

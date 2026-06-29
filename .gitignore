@@ -1,6 +1,8 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# ==============================================
+# VizualizatorPRO - .gitignore
+# ==============================================
 
-# dependencies
+# Dependencies
 node_modules
 /.pnp
 .pnp.*
@@ -10,58 +12,92 @@ node_modules
 !.yarn/releases
 !.yarn/versions
 
-# testing
+# Testing
 /coverage
+*.lcov
+.nyc_output
 
-# next.js
+# Next.js
 /.next/
 /out/
+next-env.d.ts
 
-# production
+# Production
 /build
+/dist
 
-# misc
+# Misc
 .DS_Store
 *.pem
+Thumbs.db
 
-# debug
+# Debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
-
-# env files (can opt-in for committing if needed)
-.env*
-!.env.example
-
-# vercel
-.vercel
-
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-local-*
-.claude
-.z-ai-config
 *.log
 dev.log
+server.log
 dev.out.log
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env*.local
+!.env.example
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.local
+.claude
+.z-ai-config
+
+# Database
+db/*.db
+db/*.db-journal
+db/*.sqlite
+db/*.sqlite-journal
+
+# Uploads (uporabniške slike)
+public/uploads/*
+!public/uploads/.gitkeep
+
+# Sandbox specifično (NE commitati)
+.zscripts/
+.z-ai-config
+research/
+download/
+upload/
+skills/
+mini-services/
+examples/
 test
 prompt
 
-server.log
-# Skills directory
-/skills/
-# zscripts (internal sandbox)
-.zscripts/
+# OS
+.DS_Store
+Thumbs.db
 
-# Database files
-db/*.db
-db/*.db-journal
+# Docker
+docker-compose.override.yml
 
-# Research folder
-research/
-
-# Download folder
-download/
+# Cache
+.cache/
+.parcel-cache/
+.eslintcache
+.turbo
+*.tsbuildinfo

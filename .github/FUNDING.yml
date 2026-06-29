@@ -1,0 +1,21 @@
+# FUNDING.yml - Podpora projektu
+
+# Sponzoriranje / podpora projektu
+# Lahko dodaš svoje profile na različnih platformah
+
+# GitHub Sponsors
+github: [markec12345678]
+
+# Custom platforms (opcijsko)
+# patreon: # Replace with your Patreon username
+# open_collective: # Replace with your Open Collective username
+# ko_fi: # Replace with your Ko-fi username
+# tidelift: # Replace with your Tidelift username
+# community_bridge: # Replace with your Community Bridge username
+# liberapay: # Replace with your Liberapay username
+# issuehunt: # Replace with your Issuehunt username
+# otechie: # Replace with your Otechie username
+# lfx_crowdfunding: # Replace with your LFX Crowdfunding username
+
+# Custom URL (za PayPal, bank transfer, itd.)
+custom: ['https://vizualizatorpro.si/podpri-nas']
