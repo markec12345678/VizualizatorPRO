@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { ServiceWorkerRegister } from "@/components/vizualizator/sw-register";
 import { Providers } from "@/components/providers";
 import { reportWebVitals } from "@/lib/web-vitals";
+import { CookieConsent } from "@/components/vizualizator/cookie-consent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -56,6 +57,7 @@ export default function RootLayout({
           {children}
           <Toaster />
           <ServiceWorkerRegister />
+          <CookieConsent />
         </Providers>
       </body>
     </html>
