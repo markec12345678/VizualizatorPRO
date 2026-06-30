@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Commit-msg hook: preveri da commit message sledi conventional commits
+echo "📝 Commit-msg: preverjam format sporočila..."
+bunx commitlint --edit "$1"
