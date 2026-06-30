@@ -30,17 +30,73 @@ export async function sendLeadNotification(data: LeadEmailData): Promise<boolean
   const resend = getResendClient()
   
   const emailContent = `
-<h2>Nov lead preko VizualizatorPRO!</h2>
-<table style="border-collapse: collapse; width: 100%; font-family: sans-serif;">
-  <tr><td style="padding: 8px; border: 1px solid #ddd; background: #f9f9f9; font-weight: bold;">Ime:</td><td style="padding: 8px; border: 1px solid #ddd;">${data.name}</td></tr>
-  <tr><td style="padding: 8px; border: 1px solid #ddd; background: #f9f9f9; font-weight: bold;">Email:</td><td style="padding: 8px; border: 1px solid #ddd;"><a href="mailto:${data.email}">${data.email}</a></td></tr>
-  ${data.phone ? `<tr><td style="padding: 8px; border: 1px solid #ddd; background: #f9f9f9; font-weight: bold;">Telefon:</td><td style="padding: 8px; border: 1px solid #ddd;"><a href="tel:${data.phone}">${data.phone}</a></td></tr>` : ''}
-  ${data.company ? `<tr><td style="padding: 8px; border: 1px solid #ddd; background: #f9f9f9; font-weight: bold;">Firma:</td><td style="padding: 8px; border: 1px solid #ddd;">${data.company}</td></tr>` : ''}
-  ${data.materialInterest ? `<tr><td style="padding: 8px; border: 1px solid #ddd; background: #f9f9f9; font-weight: bold;">Zanima:</td><td style="padding: 8px; border: 1px solid #ddd;">${data.materialInterest}</td></tr>` : ''}
-</table>
-${data.notes ? `<h3>Sporočilo:</h3><p style="font-family: sans-serif; padding: 12px; background: #f9f9f9; border-left: 4px solid #f59e0b;">${data.notes}</p>` : ''}
-<hr>
-<p style="font-size: 12px; color: #666; font-family: sans-serif;">Email poslan avtomatsko iz VizualizatorPRO sistema.</p>
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nov lead - VizualizatorPRO</title>
+</head>
+<body style="margin:0;padding:0;background:#f4f4f5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+  <div style="max-width:600px;margin:0 auto;background:#ffffff;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.1);">
+    
+    <!-- Header -->
+    <div style="background:#0a0a0a;padding:24px 32px;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div style="width:40px;height:40px;background:#f59e0b;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:20px;">✨</div>
+        <div>
+          <h1 style="margin:0;color:#ffffff;font-size:18px;font-weight:700;">VizualizatorPRO</h1>
+          <p style="margin:0;color:#a1a1aa;font-size:12px;">AI vizualizacije za prodajo</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Amber bar -->
+    <div style="height:4px;background:#f59e0b;"></div>
+    
+    <!-- Content -->
+    <div style="padding:32px;">
+      <h2 style="margin:0 0 4px;color:#0a0a0a;font-size:22px;">🎯 Nov lead!</h2>
+      <p style="margin:0 0 24px;color:#71717a;font-size:14px;">Prejel si novo povpraševanje preko VizualizatorPRO.</p>
+      
+      <!-- Data table -->
+      <table style="width:100%;border-collapse:collapse;margin-bottom:24px;">
+        <tr>
+          <td style="padding:12px 16px;background:#f4f4f5;font-weight:600;color:#0a0a0a;font-size:13px;border-radius:8px 0 0 8px;width:35%;">Ime</td>
+          <td style="padding:12px 16px;color:#27272a;font-size:14px;background:#ffffff;border:1px solid #e4e4e7;border-radius:0 8px 8px 0;">${data.name}</td>
+        </tr>
+        <tr><td style="height:8px;"></td></tr>
+        <tr>
+          <td style="padding:12px 16px;background:#f4f4f5;font-weight:600;color:#0a0a0a;font-size:13px;border-radius:8px 0 0 8px;">Email</td>
+          <td style="padding:12px 16px;color:#27272a;font-size:14px;background:#ffffff;border:1px solid #e4e4e7;border-radius:0 8px 8px 0;"><a href="mailto:${data.email}" style="color:#f59e0b;text-decoration:none;">${data.email}</a></td>
+        </tr>
+        ${data.phone ? `<tr><td style="height:8px;"></td></tr><tr><td style="padding:12px 16px;background:#f4f4f5;font-weight:600;color:#0a0a0a;font-size:13px;border-radius:8px 0 0 8px;">Telefon</td><td style="padding:12px 16px;color:#27272a;font-size:14px;background:#ffffff;border:1px solid #e4e4e7;border-radius:0 8px 8px 0;"><a href="tel:${data.phone}" style="color:#f59e0b;text-decoration:none;">${data.phone}</a></td></tr>` : ''}
+        ${data.company ? `<tr><td style="height:8px;"></td></tr><tr><td style="padding:12px 16px;background:#f4f4f5;font-weight:600;color:#0a0a0a;font-size:13px;border-radius:8px 0 0 8px;">Firma</td><td style="padding:12px 16px;color:#27272a;font-size:14px;background:#ffffff;border:1px solid #e4e4e7;border-radius:0 8px 8px 0;">${data.company}</td></tr>` : ''}
+        ${data.materialInterest ? `<tr><td style="height:8px;"></td></tr><tr><td style="padding:12px 16px;background:#f4f4f5;font-weight:600;color:#0a0a0a;font-size:13px;border-radius:8px 0 0 8px;">Zanima</td><td style="padding:12px 16px;color:#27272a;font-size:14px;background:#ffffff;border:1px solid #e4e4e7;border-radius:0 8px 8px 0;">${data.materialInterest}</td></tr>` : ''}
+      </table>
+      
+      ${data.notes ? `
+      <!-- Notes -->
+      <div style="background:#fffbeb;border-left:4px solid #f59e0b;padding:16px;border-radius:0 8px 8px 0;margin-bottom:24px;">
+        <p style="margin:0 0 4px;font-size:12px;font-weight:600;color:#92400e;text-transform:uppercase;letter-spacing:0.5px;">Sporočilo</p>
+        <p style="margin:0;color:#27272a;font-size:14px;line-height:1.6;">${data.notes}</p>
+      </div>
+      ` : ''}
+      
+      <!-- CTA -->
+      <a href="mailto:${data.email}" style="display:inline-block;background:#f59e0b;color:#0a0a0a;font-weight:600;font-size:14px;padding:12px 24px;border-radius:8px;text-decoration:none;">Odgovori stranki →</a>
+    </div>
+    
+    <!-- Footer -->
+    <div style="background:#f4f4f5;padding:20px 32px;border-top:1px solid #e4e4e7;">
+      <p style="margin:0;color:#a1a1aa;font-size:11px;text-align:center;line-height:1.6;">
+        Email poslan avtomatsko iz VizualizatorPRO sistema.<br>
+        © 2026 VizualizatorPRO. Vse pravice pridržane.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
 `.trim()
 
   if (!resend) {
