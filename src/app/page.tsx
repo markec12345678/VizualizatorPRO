@@ -17,6 +17,7 @@ import { PdfExport } from '@/components/vizualizator/pdf-export'
 import { ArMode } from '@/components/vizualizator/ar-mode'
 import { UserMenu } from '@/components/vizualizator/user-menu'
 import { Dashboard } from '@/components/vizualizator/dashboard'
+import { ThemeToggle } from '@/components/vizualizator/theme-toggle'
 import { useToast } from '@/hooks/use-toast'
 import type { CatalogMaterial } from '@/lib/catalog'
 
@@ -203,6 +204,7 @@ export default function Home() {
                 </Badge>
               )}
               <UserMenu />
+              <ThemeToggle />
             </div>
           </div>
         </div>

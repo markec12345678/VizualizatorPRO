@@ -1,9 +1,10 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import { Check, Layers, Grid3x3, User } from 'lucide-react'
+import { useState, useEffect, useMemo } from 'react'
+import { Check, Layers, Grid3x3, User, Search } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { Input } from '@/components/ui/input'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import {
   WPC_PROFILES,
@@ -21,6 +22,7 @@ interface MaterialSelectorProps {
 export function MaterialSelector({ selectedId, onSelect }: MaterialSelectorProps) {
   const [activeCategory, setActiveCategory] = useState<MaterialCategory | 'CUSTOM'>('WPC_OGRAJA')
   const [customMaterials, setCustomMaterials] = useState<CatalogMaterial[]>([])
+  const [searchQuery, setSearchQuery] = useState('')
 
   const reloadCustomMaterials = async () => {
     try {
@@ -71,6 +73,38 @@ export function MaterialSelector({ selectedId, onSelect }: MaterialSelectorProps
     return () => { mounted = false }
   }, [])
 
+  // Filtriraj materiale po iskalnem nizu
+  const filteredWpc = useMemo(() => {
+    if (!searchQuery.trim()) return WPC_PROFILES
+    const q = searchQuery.toLowerCase()
+    return WPC_PROFILES.filter(m =>
+      m.name.toLowerCase().includes(q) ||
+      m.description.toLowerCase().includes(q) ||
+      m.specifications.type?.toLowerCase().includes(q) ||
+      m.specifications.color?.toLowerCase().includes(q)
+    )
+  }, [searchQuery])
+
+  const filteredCeramic = useMemo(() => {
+    if (!searchQuery.trim()) return CERAMIC_TILES
+    const q = searchQuery.toLowerCase()
+    return CERAMIC_TILES.filter(m =>
+      m.name.toLowerCase().includes(q) ||
+      m.description.toLowerCase().includes(q) ||
+      m.specifications.type?.toLowerCase().includes(q) ||
+      m.specifications.color?.toLowerCase().includes(q)
+    )
+  }, [searchQuery])
+
+  const filteredCustom = useMemo(() => {
+    if (!searchQuery.trim()) return customMaterials
+    const q = searchQuery.toLowerCase()
+    return customMaterials.filter(m =>
+      m.name.toLowerCase().includes(q) ||
+      m.description.toLowerCase().includes(q)
+    )
+  }, [searchQuery, customMaterials])
+
   return (
     <Card className="overflow-hidden">
       <div className="p-6">
@@ -86,6 +120,18 @@ export function MaterialSelector({ selectedId, onSelect }: MaterialSelectorProps
               ✓ Material izbran
             </span>
           )}
+        </div>
+
+        {/* Iskanje */}
+        <div className="relative mb-4">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+          <Input
+            type="text"
+            placeholder="Iskanje materialov po imenu, barvi, tipu..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="pl-10"
+          />
         </div>
 
         <Tabs value={activeCategory} onValueChange={(v) => setActiveCategory(v as MaterialCategory | 'CUSTOM')}>
@@ -109,7 +155,7 @@ export function MaterialSelector({ selectedId, onSelect }: MaterialSelectorProps
 
           <TabsContent value="WPC_OGRAJA" className="mt-0">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {WPC_PROFILES.map((material) => (
+              {filteredWpc.map((material) => (
                 <MaterialCard
                   key={material.id}
                   material={material}
@@ -122,7 +168,7 @@ export function MaterialSelector({ selectedId, onSelect }: MaterialSelectorProps
 
           <TabsContent value="KERAMIKA" className="mt-0">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {CERAMIC_TILES.map((material) => (
+              {filteredCeramic.map((material) => (
                 <MaterialCard
                   key={material.id}
                   material={material}
@@ -145,7 +191,7 @@ export function MaterialSelector({ selectedId, onSelect }: MaterialSelectorProps
                 </div>
               ) : (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                  {customMaterials.map((material) => (
+                  {filteredCustom.map((material) => (
                     <MaterialCard
                       key={material.id}
                       material={material}
