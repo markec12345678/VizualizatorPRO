@@ -1,14 +1,82 @@
+# robots.txt za VizualizatorPRO
+# https://www.robotstxt.org/
+
+# Vsi boti
+User-agent: *
+
+# Dovoli celoten site
+Allow: /
+
+// Zabrani API endpointe
+Disallow: /api/
+Disallow: /api/auth/
+Disallow: /api/lead
+Disallow: /api/visualize
+Disallow: /api/dashboard
+Disallow: /api/organization/
+Disallow: /api/materials/custom
+
+# Zabrani admin
+Disallow: /admin
+
+# Sitemap
+Sitemap: https://vizualizatorpro.si/sitemap.xml
+
+# Crawl delay (strinške strani)
+Crawl-delay: 1
+
+# ===== Specifični boti =====
+
+# Google
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
+# Google Images
+User-agent: Googlebot-Image
+Allow: /
+Allow: /materials/
+Allow: /public/materials/
+
+# Bing
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
-User-agent: Twitterbot
+# Yandex
+User-agent: Yandex
 Allow: /
+Crawl-delay: 2
 
-User-agent: facebookexternalhit
+# Baidu
+User-agent: Baiduspider
 Allow: /
+Crawl-delay: 2
 
-User-agent: *
+# Ahrefs
+User-agent: AhrefsBot
 Allow: /
+Crawl-delay: 5
+
+# Semrush
+User-agent: SemrushBot
+Allow: /
+Crawl-delay: 5
+
+# ===== Zabrani boti (scrapers) =====
+
+User-agent: SemrushBot-SA
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: AppleBot
+Allow: /
+Crawl-delay: 1

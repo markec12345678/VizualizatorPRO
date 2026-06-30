@@ -15,6 +15,7 @@ import { ResultViewer } from '@/components/vizualizator/result-viewer'
 import { AdminPanel } from '@/components/vizualizator/admin-panel'
 import { PdfExport } from '@/components/vizualizator/pdf-export'
 import { ArMode } from '@/components/vizualizator/ar-mode'
+import { WebXrMode } from '@/components/vizualizator/webxr-mode'
 import { UserMenu } from '@/components/vizualizator/user-menu'
 import { Dashboard } from '@/components/vizualizator/dashboard'
 import { LanguageSwitcher } from '@/components/vizualizator/language-switcher'
@@ -174,7 +175,7 @@ export default function Home() {
   const canGenerate = imageBase64 && selectedMaterial && !isProcessing
 
   return (
-    <main className="min-h-screen flex flex-col bg-background">
+    <main id="main-content" className="min-h-screen flex flex-col bg-background">
       <header className="border-b bg-card">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
@@ -322,6 +323,8 @@ export default function Home() {
               />
 
               <ArMode />
+
+              <WebXrMode />
 
               <Card className="p-6">
                 <div className="mb-4">
