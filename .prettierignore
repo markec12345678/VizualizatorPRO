@@ -1,0 +1,68 @@
+# Prettier ignore - datoteke, ki naj se ne formatirajo
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+.next/
+out/
+build/
+dist/
+.turbo/
+
+# Cache
+.cache/
+.parcel-cache/
+.eslintcache
+
+# Database
+db/*.db
+db/*.db-journal
+db/*.sqlite
+
+# Logs
+*.log
+dev.log
+server.log
+dev.out.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Lockfiles (formatirani samodejno)
+bun.lock
+package-lock.json
+yarn.lock
+
+# Auto-generated
+prisma/migrations/
+.next/types/
+*.tsbuildinfo
+
+# Binary files
+public/materials/*.jpg
+public/materials/*.png
+public/uploads/*
+public/icon-*.png
+public/og-image.png
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sandbox specifično
+.zscripts/
+research/
+download/
+upload/
+skills/
+mini-services/
+examples/

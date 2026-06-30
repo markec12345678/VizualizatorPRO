@@ -4,6 +4,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { ServiceWorkerRegister } from "@/components/vizualizator/sw-register";
 import { Providers } from "@/components/providers";
+import { reportWebVitals } from "@/lib/web-vitals";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -60,3 +61,6 @@ export default function RootLayout({
     </html>
   );
 }
+
+// Web Vitals reporting
+export { reportWebVitals };
