@@ -1,0 +1,21 @@
+/* TEAM */
+Founder & Developer: Marko Marković
+Contact: info@vizualizatorpro.si
+Twitter: @vizualizatorpro
+GitHub: @markec12345678
+Location: Kranj, Slovenia
+
+/* THANKS */
+Next.js team for the amazing framework
+Prisma team for the best ORM
+shadcn for the UI components
+Z.ai for GLM-5.2 AI model
+Replicate for ControlNet models
+Resend for email service
+Vercel for hosting
+
+/* SITE */
+Last update: 2026-06-29
+Standards: HTML5, CSS3, ES2022, TypeScript 5
+Components: Next.js 16, React 19, Prisma 6, Tailwind 4
+Software: VizualizatorPRO v1.4.0

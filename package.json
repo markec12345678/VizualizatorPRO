@@ -1,7 +1,29 @@
 {
-  "name": "nextjs_tailwind_shadcn_ts",
-  "version": "0.2.0",
+  "name": "vizualizatorpro",
+  "version": "1.4.0",
   "private": true,
+  "description": "AI vizualizacije za prodajo balkonskih ograd in keramike",
+  "license": "MIT",
+  "author": "VizualizatorPRO <info@vizualizatorpro.si>",
+  "homepage": "https://vizualizatorpro.si",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markec12345678/VizualizatorPRO"
+  },
+  "keywords": [
+    "nextjs",
+    "typescript",
+    "prisma",
+    "ai",
+    "ar",
+    "saas",
+    "multi-tenant",
+    "slovenia",
+    "construction",
+    "balcony",
+    "railing",
+    "ceramic"
+  ],
   "scripts": {
     "dev": "next dev -p 3000 2>&1 | tee dev.log",
     "build": "next build && cp -r .next/static .next/standalone/.next/ && cp -r public .next/standalone/",
