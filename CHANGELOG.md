@@ -8,9 +8,68 @@ in projekt sledi [Semantic Versioning](https://semver.org/lang/sl/).
 ## [Unreleased]
 
 ### Načrtovano
-- Stripe integracija za mesečne naročnine
-- WebXR AR z globino
+- Stripe integracija (po želji uporabnika - izpuščeno iz open-source)
 - App Store / Google Play deploy
+- React Native mobilna aplikacija
+
+## [1.4.0] - 2026-06-29
+
+### ✨ Dodano
+- **i18n podpora (4 jeziki)** - slovenščina, angleščina, nemščina, italijanščina
+  - `next-intl` konfiguracija z `src/i18n/request.ts`
+  - 4 JSON prevodi v `src/messages/` (~5KB vsak)
+  - `LanguageSwitcher` komponenta z zastavicami in imeni
+  - localStorage + cookie persistence
+- **Unit testi z Vitest** (72 testov, vsi passing)
+  - `vitest.config.ts` z jsdom environment in v8 coverage
+  - `test/setup.ts` z mock setup (Next.js router, image, matchMedia, IntersectionObserver)
+  - `catalog.test.ts` - 29 testov (materiali, cene, specifikacije, kategorije)
+  - `auth.test.ts` - 24 testov (vloge, validacija email/password/role/category)
+  - `i18n.test.ts` - 19 testov (locales, flags, consistent keys across all 4 languages)
+- **E2E testi z Playwright** (30+ testov)
+  - `playwright.config.ts` z 5 projekti (chromium, firefox, webkit, mobile-chrome, mobile-safari)
+  - `e2e/home.spec.ts` - testi za vse glavne funkcionalnosti
+  - Auto-start dev server v CI, trace/screenshot/video on failure
+- **WebXR AR z globino** (napredna AR)
+  - `webxr-mode.tsx` komponenta z WebXR API
+  - Hit-test za detekcijo površin, anchor sistem
+  - WebGL rendering (xrCompatible), DOM overlay
+  - Fallback UI za nepodprte naprave
+- **PostgreSQL support**
+  - `prisma/schema.postgres.prisma` z indeksi
+  - `scripts/switch-db.sh` za preklop SQLite ↔ PostgreSQL
+- **SEO optimizacija**
+  - OpenGraph z OG sliko (1344x768, AI generirana)
+  - Twitter Card (summary_large_image)
+  - JSON-LD structured data (SoftwareApplication schema)
+  - `robots.txt` z bot-specific pravili
+  - `sitemap.ts` z alternates za 4 jezike
+- **Security headers** v `next.config.ts`
+  - X-Frame-Options, X-Content-Type-Options, Referrer-Policy
+  - Permissions-Policy, HSTS z preload, Cache-Control
+- **Accessibility izboljšave**
+  - Skip-to-content link, `id="main-content"`
+  - `colorScheme: light dark` v viewport, `userScalable: true`
+- **Seed skripta** (`prisma/seed.ts`)
+  - 1 organizacija, 3 uporabniki, 5 projektov, 8 vizualizacij, 3 custom materiali
+  - Demo geslo: `demo123`
+- **Sentry error tracking** (`src/lib/sentry.ts`) - optional, env-based
+- **PostHog analytics** (`src/lib/analytics.ts`) - optional, env-based
+  - 15+ preddefiniranih eventov (visualization, AR, lead, auth, PDF, material, team, language)
+
+### 🔄 Spremenjeno
+- `next.config.ts` - security headers, image optimization, compression
+- `layout.tsx` - polni SEO metadata, JSON-LD, skip-to-content link
+- `package.json` - dodane test skripte (`test`, `test:watch`, `test:coverage`, `db:seed`)
+- `.env.example` - dodani SENTRY_DSN, NEXT_PUBLIC_POSTHOG_KEY, NEXT_PUBLIC_POSTHOG_HOST
+
+### 📚 Dokumentacija
+- `docs/API.md` - celovita API dokumentacija (14.6 KB)
+- `docs/DATABASE.md` - shema baze in migracije (16.4 KB)
+- `docs/DEPLOYMENT.md` - navodila za deployment (11.6 KB)
+- `docs/DEVELOPMENT.md` - setup razvojnega okolja (15.2 KB)
+- `docs/TESTING.md` - navodila za testiranje (14.0 KB)
+- `docs/README.md` - kazalo dokumentacije
 
 ## [1.3.0] - 2026-06-29
 
