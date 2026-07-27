@@ -1,0 +1,18 @@
+{
+  "id": "ws_67896032",
+  "name": "tttt",
+  "slug": "tttt",
+  "defaults": {
+    "permissionMode": "safe",
+    "cyclablePermissionModes": [
+      "safe",
+      "allow-all"
+    ],
+    "enabledSourceSlugs": []
+  },
+  "localMcpServers": {
+    "enabled": true
+  },
+  "createdAt": 1782517545256,
+  "updatedAt": 1782517545258
+}

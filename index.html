@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VizualizatorPRO — 2D/3D Vizualizator Ograj & Kalkulator Ponudb</title>
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Header Navigation Bar -->
+  <header class="navbar">
+    <a href="#" class="brand">
+      <div class="brand-icon">VP</div>
+      <div>Vizualizator<span>PRO</span></div>
+    </a>
+    
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <div class="nav-status">
+        <div class="status-dot"></div>
+        <span>PWA Aktivno — Terenski Način</span>
+      </div>
+      <button class="btn btn-primary btn-sm" id="generatePdfBtn">
+        <i data-lucide="file-text"></i> Ustvari PDF Ponudbo
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Application Workspace -->
+  <main class="main-container">
+    
+    <!-- Canvas Workplace Panel -->
+    <section class="workplace-card">
+      <div class="workplace-toolbar">
+        <div class="tool-group">
+          <label for="imageUpload" class="btn btn-secondary btn-sm">
+            <i data-lucide="upload"></i> Naloži Fotografijo Objekta
+          </label>
+          <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+
+          <button class="btn btn-secondary btn-sm" id="addPointBtn">
+            <i data-lucide="plus"></i> Dodaj Točko Ograje
+          </button>
+          <button class="btn btn-danger btn-sm" id="resetPointsBtn">
+            <i data-lucide="rotate-ccw"></i> Ponastavi
+          </button>
+        </div>
+
+        <div class="tool-group">
+          <span style="font-size: 0.85rem; color: var(--text-muted);">Premikaj točke T1, T2 s prstom ali miško</span>
+        </div>
+      </div>
+
+      <!-- Canvas Viewport -->
+      <div class="canvas-wrapper">
+        <canvas id="mainCanvas"></canvas>
+        
+        <div class="canvas-overlay-hint">
+          <i data-lucide="mouse-pointer"></i> Klikni in povleči rumene točke T1, T2 za nastavitev linije balkona ali dvorišča
+        </div>
+      </div>
+    </section>
+
+    <!-- Controls & Calculator Sidebar -->
+    <aside class="controls-sidebar">
+      
+      <!-- Panel 1: Model Ograje -->
+      <div class="panel-card">
+        <h3 class="panel-title"><i data-lucide="layers"></i> Model in Stil Ograje</h3>
+        
+        <div class="model-grid">
+          <div class="model-option active" data-model="alu_horiz">
+            <span class="model-option-icon">❚❚❚</span>
+            <span class="model-option-title">ALU Horizont</span>
+          </div>
+          <div class="model-option" data-model="alu_vert">
+            <span class="model-option-icon">|||</span>
+            <span class="model-option-title">ALU Vertikal</span>
+          </div>
+          <div class="model-option" data-model="glass">
+            <span class="model-option-icon">░░░</span>
+            <span class="model-option-title">Steklo Inox</span>
+          </div>
+          <div class="model-option" data-model="inox">
+            <span class="model-option-icon">≡≡≡</span>
+            <span class="model-option-title">Inox Cevna</span>
+          </div>
+        </div>
+
+        <!-- RAL Color Swatches -->
+        <label>Barvni odtenek (RAL Lestvica):</label>
+        <div class="ral-grid">
+          <div class="ral-swatch active" style="background-color: #374151;" data-code="RAL 7016" data-name="Antracit siva" data-hex="#374151" title="RAL 7016 Antracit"></div>
+          <div class="ral-swatch" style="background-color: #111827;" data-code="RAL 9005" data-name="Črna mat" data-hex="#111827" title="RAL 9005 Črna"></div>
+          <div class="ral-swatch" style="background-color: #f9fafb;" data-code="RAL 9016" data-name="Bela" data-hex="#f9fafb" title="RAL 9016 Bela"></div>
+          <div class="ral-swatch" style="background-color: #451a03;" data-code="RAL 8019" data-name="Rjava" data-hex="#451a03" title="RAL 8019 Rjava"></div>
+          <div class="ral-swatch" style="background-color: #b45309;" data-code="Wood-01" data-name="Zlati hrast" data-hex="#b45309" title="Imitacija Lesa"></div>
+        </div>
+      </div>
+
+      <!-- Panel 2: Dimenzije in Nastavitve -->
+      <div class="panel-card">
+        <h3 class="panel-title"><i data-lucide="sliders"></i> Dimenzije in Parametri</h3>
+
+        <div class="form-group">
+          <label for="knownLength">Skupna dolžina ograje (v metrih):</label>
+          <input type="number" id="knownLength" value="5.0" step="0.1" min="0.5" max="100.0">
+        </div>
+
+        <div class="form-group">
+          <label for="fenceHeight">Višina ograje (cm):</label>
+          <input type="number" id="fenceHeight" value="100" min="60" max="180">
+        </div>
+
+        <div class="form-group">
+          <label for="slatGap">Razmak med letvami (cm):</label>
+          <input type="number" id="slatGap" value="3" min="1" max="15">
+        </div>
+
+        <div class="form-group">
+          <label for="vatSelect">Stopnja DDV:</label>
+          <select id="vatSelect">
+            <option value="0.095">9.5 % (Stanovanjski objekti)</option>
+            <option value="0.22">22.0 % (Poslovni objekti / Material)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Panel 3: Izračun Cene in Materiala -->
+      <div class="panel-card">
+        <h3 class="panel-title"><i data-lucide="calculator"></i> Predračun Materiala in Dela</h3>
+
+        <div class="quote-summary">
+          <div class="summary-row">
+            <span>Dolžina ograje:</span>
+            <span class="price-tag" id="summaryMeters">5.0 m</span>
+          </div>
+          <div class="summary-row">
+            <span>Potrebni stebrički:</span>
+            <span class="price-tag" id="summaryPosts">5 kos</span>
+          </div>
+          <div class="summary-row">
+            <span>Material ograje:</span>
+            <span class="price-tag" id="summaryMaterial">700.00 €</span>
+          </div>
+          <div class="summary-row">
+            <span>Montaža in vgradnja:</span>
+            <span class="price-tag" id="summaryLabor">175.00 €</span>
+          </div>
+          <div class="summary-row">
+            <span>DDV:</span>
+            <span class="price-tag" id="summaryVat">83.13 €</span>
+          </div>
+          <div class="summary-row total">
+            <span>SKUPAJ Z DDV:</span>
+            <span class="price-tag" id="summaryGrandTotal">958.13 €</span>
+          </div>
+        </div>
+
+        <button class="btn btn-success" style="width: 100%; margin-top: 1rem; justify-content: center;" onclick="openQuoteModal()">
+          <i data-lucide="check-circle"></i> Izstavi Ponudbo & Podpiši
+        </button>
+      </div>
+
+    </aside>
+  </main>
+
+  <!-- Quote Generation & Signature Modal -->
+  <div class="modal-backdrop" id="quoteModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2 class="modal-title">Izstavi PDF Ponudbo</h2>
+        <button class="close-btn" id="closeModalBtn">&times;</button>
+      </div>
+
+      <form id="quoteForm">
+        <div class="form-group">
+          <label for="custName">Ime in priimek stranke *</label>
+          <input type="text" id="custName" placeholder="npr. Janez Novak" required>
+        </div>
+
+        <div class="form-group">
+          <label for="custAddress">Naslov objekta / montaže *</label>
+          <input type="text" id="custAddress" placeholder="npr. Celovška cesta 120, Ljubljana" required>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="custPhone">Telefonska številka</label>
+            <input type="text" id="custPhone" placeholder="041 123 456">
+          </div>
+          <div class="form-group">
+            <label for="custEmail">E-pošta</label>
+            <input type="email" id="custEmail" placeholder="janez@example.com">
+          </div>
+        </div>
+
+        <!-- Signature Pad -->
+        <div class="form-group" style="margin-top: 1rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <label>E-podpis stranke na terenu:</label>
+            <button type="button" class="btn btn-secondary btn-sm" id="clearSigBtn">Počisti podpis</button>
+          </div>
+          <canvas id="signatureCanvas"></canvas>
+        </div>
+
+        <div style="margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; background: rgba(15,23,42,0.6); padding: 1rem; border-radius: 10px;">
+          <div>
+            <span style="font-size: 0.85rem; color: var(--text-muted);">Znesek ponudbe z DDV:</span>
+            <div style="font-size: 1.3rem; font-weight: 700; color: var(--accent-gold);" id="modalGrandTotal">958.13 €</div>
+          </div>
+          <button type="submit" class="btn btn-success">
+            <i data-lucide="download"></i> Prenesi PDF Ponudbo
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <i data-lucide="check-circle-2" class="toast-icon"></i>
+    <span id="toastMsg">Obvestilo</span>
+  </div>
+
+  <!-- Application JS Code -->
+  <script src="app.js"></script>
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
